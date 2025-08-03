@@ -7,10 +7,11 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        serif: ["var(--font-serif)", "serif"],
-      },
+    fontFamily: {
+      sans: ["var(--font-sans)", "sans-serif"],
+      display: ["var(--font-display)", "sans-serif"],
+      serif: ["ui-serif", "Georgia", "serif"],
+      mono: ["ui-monospace", "SFMono-Regular", "monospace"],
     },
   },
   plugins: [],

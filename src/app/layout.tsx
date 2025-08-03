@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
-import { Crimson_Text } from "next/font/google";
+import { Hanken_Grotesk } from "next/font/google";
+import { Funnel_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const crimsonText = Crimson_Text({
-  weight: ['400', '600'],
+const hankenGrotesk = Hanken_Grotesk({
+  weight: ['300', '400', '500', '600', '700'],
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-sans",
+});
+
+const funnelDisplay = Funnel_Display({
+  weight: ['300', '400', '500', '600', '700', '800'],
+  subsets: ["latin"],
+  variable: "--font-display",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${crimsonText.variable} font-serif antialiased`}>
+      <body className={`${hankenGrotesk.variable} ${funnelDisplay.variable} font-sans antialiased`}>
         <Header />
         <main className="min-h-screen">
           {children}

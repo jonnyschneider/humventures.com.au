@@ -6,11 +6,12 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
+  { name: 'How We Work', href: '/how-we-work' },
   { name: 'Services', href: '/services' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Results', href: '/results' },
+  { name: 'About', href: '/about' },
+  { name: 'Resources', href: '/resources' },
+  { name: 'Get Started', href: '/contact', isButton: true },
 ]
 
 export default function Header() {
@@ -44,7 +45,10 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-serif font-medium text-gray-700 hover:text-gray-900"
+              className={item.isButton 
+                ? "rounded-md bg-gray-900 px-3 py-2 text-sm font-semibold text-white hover:bg-gray-700"
+                : "text-sm font-serif font-medium text-gray-700 hover:text-gray-900"
+              }
             >
               {item.name}
             </Link>
@@ -79,7 +83,10 @@ export default function Header() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-serif font-medium text-gray-900 hover:bg-gray-50"
+                      className={item.isButton
+                        ? "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white bg-gray-900 hover:bg-gray-700"
+                        : "-mx-3 block rounded-lg px-3 py-2 text-base font-serif font-medium text-gray-900 hover:bg-gray-50"
+                      }
                     >
                       {item.name}
                     </Link>

@@ -1,6 +1,10 @@
+import Navigation from '@/components/Navigation'
+
 export default function HowWeWork() {
   return (
-    <div className="py-24 sm:py-32">
+    <div>
+      <Navigation variant="light" position="relative" />
+      <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-display font-semibold tracking-tight text-gray-900 sm:text-6xl">
@@ -177,6 +181,7 @@ export default function HowWeWork() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }

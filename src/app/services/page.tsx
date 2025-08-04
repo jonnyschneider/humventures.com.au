@@ -1,6 +1,10 @@
+import Navigation from '@/components/Navigation'
+
 export default function Services() {
   return (
-    <div className="py-24 sm:py-32">
+    <div>
+      <Navigation variant="light" position="relative" />
+      <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-display font-semibold tracking-tight text-gray-900 sm:text-6xl">
@@ -172,7 +176,7 @@ export default function Services() {
             </p>
             <div className="flex justify-center space-x-4">
               <a
-                href="/how-we-work"
+                href="/how-we-work-v3"
                 className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-500"
               >
                 See How We Work
@@ -187,6 +191,7 @@ export default function Services() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

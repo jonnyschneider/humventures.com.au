@@ -1,6 +1,10 @@
+import Navigation from '@/components/Navigation'
+
 export default function Results() {
   return (
-    <div className="py-24 sm:py-32">
+    <div>
+      <Navigation variant="light" position="relative" />
+      <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-display font-semibold tracking-tight text-gray-900 sm:text-6xl">
@@ -11,122 +15,118 @@ export default function Results() {
           </p>
         </div>
 
-        {/* Featured Results */}
-        <div className="mx-auto mt-16 max-w-6xl">
-          <div className="grid lg:grid-cols-3 gap-8">
+        {/* Featured Results - Vertical Stack */}
+        <div className="mx-auto mt-16 max-w-7xl space-y-16">
+          
+          {/* Phantm Case Study */}
+          <div className="relative bg-white">
+            <img
+              alt="Technology startup office"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80"
+              className="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2"
+            />
+            <div className="absolute inset-0 lg:w-1/2 bg-black bg-opacity-60"></div>
             
-            {/* Phantm Case Study */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-lg mb-4">
-                  <span className="text-2xl font-display font-bold text-gray-700">P</span>
-                </div>
-                <h3 className="text-xl font-display font-semibold text-gray-900">
-                  Phantm
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Strategy to Action with the Decision Stack
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="text-center">
-                  <div className="text-2xl font-display font-bold text-blue-600">3</div>
-                  <div className="text-xs text-gray-600">days to strategic clarity</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-display font-bold text-green-600">24</div>
-                  <div className="text-xs text-gray-600">hours to first customer feedback</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-display font-bold text-purple-600">6</div>
-                  <div className="text-xs text-gray-600">weeks to de-risk solution</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-display font-bold text-orange-600">12</div>
-                  <div className="text-xs text-gray-600">weeks to win investment</div>
+            <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
+              {/* Client Info Overlay */}
+              <div className="relative px-6 pt-16 pb-8 sm:pt-20 lg:px-8 lg:pt-32 text-white">
+                <div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-white bg-opacity-20 rounded-lg mb-6">
+                    <span className="text-2xl font-display font-bold text-white">P</span>
+                  </div>
+                  <h3 className="text-2xl font-display font-semibold text-white mb-2">Phantm</h3>
+                  <p className="text-sm text-gray-200 mb-1">Industry: SaaS Technology</p>
+                  <p className="text-sm text-gray-300">Mission: Revolutionizing customer feedback through AI-powered insights</p>
                 </div>
               </div>
               
-              <p className="text-sm text-gray-600">
-                Rapid strategy facilitation followed by customer validation experiments that 
-                de-risked their solution and secured investment funding.
-              </p>
+              {/* Stats */}
+              <div className="px-6 pt-16 pb-24 sm:pt-20 sm:pb-32 lg:col-start-2 lg:px-8 lg:pt-32">
+                <div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
+                  <h2 className="text-base/8 font-semibold text-brand-plum">Case Study</h2>
+                  <p className="mt-2 text-4xl font-display font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+                    Strategy to Action with the Decision Stack
+                  </p>
+                  <p className="mt-6 text-lg/8 text-gray-600">
+                    Rapid strategy facilitation followed by customer validation experiments that 
+                    de-risked their solution and secured investment funding.
+                  </p>
+                  <dl className="mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
+                    <div className="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+                      <dt className="text-sm/6 text-gray-600">days to strategic clarity</dt>
+                      <dd className="order-first text-3xl font-display font-semibold tracking-tight text-gray-900">3</dd>
+                    </div>
+                    <div className="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+                      <dt className="text-sm/6 text-gray-600">hours to first customer feedback</dt>
+                      <dd className="order-first text-3xl font-display font-semibold tracking-tight text-gray-900">24</dd>
+                    </div>
+                    <div className="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+                      <dt className="text-sm/6 text-gray-600">weeks to de-risk solution</dt>
+                      <dd className="order-first text-3xl font-display font-semibold tracking-tight text-gray-900">6</dd>
+                    </div>
+                    <div className="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+                      <dt className="text-sm/6 text-gray-600">weeks to win investment</dt>
+                      <dd className="order-first text-3xl font-display font-semibold tracking-tight text-gray-900">12</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
             </div>
+          </div>
 
-            {/* IAG Case Study */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-lg mb-4">
-                  <span className="text-2xl font-display font-bold text-blue-700">IAG</span>
-                </div>
-                <h3 className="text-xl font-display font-semibold text-gray-900">
-                  Major Insurer
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Enterprise Innovation at Scale
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="text-center">
-                  <div className="text-2xl font-display font-bold text-green-600">90%</div>
-                  <div className="text-xs text-gray-600">lower cost of customer learning</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-display font-bold text-blue-600">20</div>
-                  <div className="text-xs text-gray-600">product experiments</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-display font-bold text-purple-600">2,000+</div>
-                  <div className="text-xs text-gray-600">customers in testing</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-display font-bold text-orange-600">4</div>
-                  <div className="text-xs text-gray-600">bad ideas killed early</div>
-                </div>
-              </div>
-              
-              <p className="text-sm text-gray-600">
-                Transformed digital innovation speed and ROI through rapid experimentation framework,
-                saving millions by killing bad ideas early.
-              </p>
-            </div>
-
-            {/* Up Bank Case Study */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-lg mb-4">
-                  <span className="text-2xl font-display font-bold text-orange-700">Up</span>
-                </div>
-                <h3 className="text-xl font-display font-semibold text-gray-900">
-                  Neobank Up
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Building Differentiated Advantage
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="text-center">
-                  <div className="text-2xl font-display font-bold text-green-600">100%</div>
-                  <div className="text-xs text-gray-600">whimsical brand maintained</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-display font-bold text-blue-600">0%</div>
-                  <div className="text-xs text-gray-600">compromise on tech quality</div>
+          {/* IAG Case Study */}
+          <div className="relative bg-white">
+            <img
+              alt="Corporate office building"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80"
+              className="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2"
+            />
+            <div className="absolute inset-0 lg:left-1/2 lg:w-1/2 bg-black bg-opacity-60"></div>
+            
+            <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
+              {/* Stats */}
+              <div className="px-6 pt-16 pb-24 sm:pt-20 sm:pb-32 lg:px-8 lg:pt-32">
+                <div className="mx-auto max-w-2xl lg:ml-0 lg:max-w-lg">
+                  <h2 className="text-base/8 font-semibold text-brand-gold">Case Study</h2>
+                  <p className="mt-2 text-4xl font-display font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+                    Enterprise Innovation at Scale
+                  </p>
+                  <p className="mt-6 text-lg/8 text-gray-600">
+                    Transformed digital innovation speed and ROI through rapid experimentation framework,
+                    saving millions by killing bad ideas early.
+                  </p>
+                  <dl className="mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
+                    <div className="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+                      <dt className="text-sm/6 text-gray-600">lower cost of customer learning</dt>
+                      <dd className="order-first text-3xl font-display font-semibold tracking-tight text-gray-900">90%</dd>
+                    </div>
+                    <div className="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+                      <dt className="text-sm/6 text-gray-600">product experiments</dt>
+                      <dd className="order-first text-3xl font-display font-semibold tracking-tight text-gray-900">20</dd>
+                    </div>
+                    <div className="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+                      <dt className="text-sm/6 text-gray-600">customers in testing</dt>
+                      <dd className="order-first text-3xl font-display font-semibold tracking-tight text-gray-900">2,000+</dd>
+                    </div>
+                    <div className="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+                      <dt className="text-sm/6 text-gray-600">bad ideas killed early</dt>
+                      <dd className="order-first text-3xl font-display font-semibold tracking-tight text-gray-900">4</dd>
+                    </div>
+                  </dl>
                 </div>
               </div>
               
-              <p className="text-sm text-gray-600 mb-4">
-                Product operations systems that enabled rapid growth while maintaining 
-                both brand differentiation and technical excellence.
-              </p>
-              
-              <blockquote className="text-xs italic text-gray-500 border-l-2 border-gray-200 pl-3">
-                "Helped us build the systems that turned our whimsical brand into sustainable competitive advantage 
-                without compromising on customer technology experience."
-              </blockquote>
+              {/* Client Info Overlay */}
+              <div className="relative px-6 pt-16 pb-8 sm:pt-20 lg:col-start-2 lg:px-8 lg:pt-32 text-white">
+                <div className="mx-auto max-w-2xl lg:ml-0 lg:max-w-lg">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-white bg-opacity-20 rounded-lg mb-6">
+                    <span className="text-lg font-display font-bold text-white">IAG</span>
+                  </div>
+                  <h3 className="text-2xl font-display font-semibold text-white mb-2">Major Insurance Group</h3>
+                  <p className="text-sm text-gray-200 mb-1">Industry: Financial Services & Insurance</p>
+                  <p className="text-sm text-gray-300">Mission: Protecting what matters most through innovative insurance solutions</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -211,6 +211,7 @@ export default function Results() {
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 }

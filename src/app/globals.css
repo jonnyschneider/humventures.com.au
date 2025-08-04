@@ -8,6 +8,45 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-emerald: #033135;
+  --color-brand-gold: #B7874A;
+  --color-brand-plum: #B84B86;
+
+  --color-daintree-50: oklch(0.8802 0.0077 206.9539);
+  --color-daintree-100: oklch(0.7625 0.0156 201.9177);
+  --color-daintree-200: oklch(0.6423 0.0220 204.2967);
+  --color-daintree-300: oklch(0.5253 0.0306 202.0866);
+  --color-daintree-400: oklch(0.4045 0.0382 205.8349);
+  --color-daintree-500: oklch(0.2864 0.0468 203.8830);
+  --color-daintree-600: oklch(0.2622 0.0390 203.3085);
+  --color-daintree-700: oklch(0.2377 0.0308 202.4283);
+  --color-daintree-800: oklch(0.2127 0.0231 205.3788);
+  --color-daintree-900: oklch(0.1842 0.0186 201.9248);
+  --color-daintree-950: oklch(0.1455 0.0146 204.1871);
+
+  --color-mulberry-50: oklch(0.9284 0.0248 348.6172);
+  --color-mulberry-100: oklch(0.8569 0.0510 349.4172);
+  --color-mulberry-200: oklch(0.7862 0.0754 348.9816);
+  --color-mulberry-300: oklch(0.7161 0.1008 349.3408);
+  --color-mulberry-400: oklch(0.6450 0.1272 349.6406);
+  --color-mulberry-500: oklch(0.5737 0.1549 349.4891);
+  --color-mulberry-600: oklch(0.5013 0.1281 349.8250);
+  --color-mulberry-700: oklch(0.4288 0.1019 349.2467);
+  --color-mulberry-800: oklch(0.3551 0.0779 349.3202);
+  --color-mulberry-900: oklch(0.2836 0.0495 350.3834);
+  --color-mulberry-950: oklch(0.2109 0.0238 350.0741);
+  
+  --color-driftwood-50: oklch(0.9427 0.0190 67.5991);
+  --color-driftwood-100: oklch(0.8847 0.0367 67.3232);
+  --color-driftwood-200: oklch(0.8287 0.0540 67.8888);
+  --color-driftwood-300: oklch(0.7707 0.0699 69.3678);
+  --color-driftwood-400: oklch(0.7147 0.0848 70.5443);
+  --color-driftwood-500: oklch(0.6577 0.0979 71.2767);
+  --color-driftwood-600: oklch(0.5703 0.0823 71.1782);
+  --color-driftwood-700: oklch(0.4842 0.0666 70.0553);
+  --color-driftwood-800: oklch(0.3964 0.0499 70.2120);
+  --color-driftwood-900: oklch(0.3122 0.0347 71.4188);
+  --color-driftwood-950: oklch(0.2235 0.0184 70.3973);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,4 +64,18 @@ body {
 .font-display {
   font-family: var(--font-display) !important;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48;
+}
+
+.material-symbols-outlined.icon-large {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 

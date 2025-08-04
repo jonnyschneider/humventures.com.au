@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import { Funnel_Display } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
+//import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const hankenGrotesk = Hanken_Grotesk({
@@ -29,8 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      </head>
       <body className={`${hankenGrotesk.variable} ${funnelDisplay.variable} font-sans antialiased`}>
-        <Header />
         <main className="min-h-screen">
           {children}
         </main>

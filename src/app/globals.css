@@ -8,9 +8,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-brand-emerald: #033135;
-  --color-brand-gold: #B7874A;
-  --color-brand-plum: #B84B86;
 
   --color-daintree-50: oklch(0.8802 0.0077 206.9539);
   --color-daintree-100: oklch(0.7625 0.0156 201.9177);

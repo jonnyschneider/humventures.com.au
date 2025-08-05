@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 506 475.05">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .05;
+      }
+
+      .cls-2 {
+        fill: #cc1a97;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: Avenir-Medium, Avenir;
+        font-size: 15px;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <circle class="cls-1" cx="264" cy="235.05" r="205"/>
+      <circle class="cls-2" cx="263.97" cy="61" r="61"/>
+      <text class="cls-3" transform="translate(224.56 45.29)"><tspan x="0" y="0">DIAGNOSE</tspan><tspan x="5.14" y="18">CURRENT</tspan><tspan x="-4.01" y="36">CONDITION</tspan></text>
+      <circle class="cls-2" cx="445" cy="235.05" r="61"/>
+      <text class="cls-3" transform="translate(412.12 219.34)"><tspan x="0" y="0">EXPLORE</tspan><tspan x="-1.12" y="18">POSSIBLE</tspan><tspan x="-9.17" y="36">SOLUTIONS</tspan></text>
+      <circle class="cls-2" cx="264" cy="414.05" r="61"/>
+      <text class="cls-3" transform="translate(251.25 398.34)"><tspan x="0" y="0">SET</tspan><tspan x="7.78" y="18">A</tspan><tspan x="-17.08" y="36">COURSE</tspan></text>
+      <circle class="cls-2" cx="61" cy="235.05" r="61"/>
+      <text class="cls-3" transform="translate(46.44 219.34)"><tspan x="0" y="0">ACT</tspan><tspan x="4.32" y="18">TO</tspan><tspan x="-9.44" y="36">LEARN</tspan></text>
+      <g>
+        <path class="cls-4" d="M337,52.05s81.73,5.16,105.93,87.6"/>
+        <polygon points="434.87 136.63 447.49 160.43 448.46 133.51 434.87 136.63"/>
+      </g>
+      <g>
+        <path class="cls-4" d="M452.38,315.05s-4.68,83.44-94.44,105.27"/>
+        <polygon points="361.29 412.41 337 424.05 363.86 426.11 361.29 412.41"/>
+      </g>
+      <g>
+        <path class="cls-4" d="M180,434.05s-81.04-22.63-94.2-97.81"/>
+        <polygon points="93.41 340.29 84 315.05 79.52 341.61 93.41 340.29"/>
+      </g>
+      <g>
+        <path class="cls-4" d="M151,220.05s78.73,20.54,97.65,102"/>
+        <polygon points="240.79 318.56 252 343.05 254.54 316.24 240.79 318.56"/>
+      </g>
+    </g>
+  </g>
+</svg>

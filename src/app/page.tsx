@@ -21,15 +21,6 @@ export default function Home() {
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-                Rapid expert evaluation for growth-stage SaaS teams.{' '}
-                <Link href="/how-we-work-v3" className="font-semibold text-indigo-400">
-                  <span aria-hidden="true" className="absolute inset-0" />
-                  Learn how <span aria-hidden="true">&rarr;</span>
-                </Link>
-              </div>
-            </div>
             <div className="text-center">
               <h1 className="text-5xl font-display font-semibold tracking-tight text-balance text-white sm:text-7xl">
                 Strategic Clarity for Growth-Stage SaaS Teams
@@ -69,9 +60,9 @@ export default function Home() {
       {/* Value proposition section */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="text-base/7 font-semibold text-indigo-600">Expert Evaluation</h2>
-            <p className="mt-2 text-4xl font-display font-semibold tracking-tight text-gray-900 sm:text-5xl">
+          <div className="mx-auto max-w-2xl lg:text-center">
+            <h2 className="text-base/7 font-semibold text-driftwood-500">Expert Evaluation</h2>
+            <p className="mt-2 text-4xl font-display font-semibold tracking-tight text-pretty text-daintree-500 sm:text-5xl lg:text-balance">
               Everything starts with understanding what matters
             </p>
             <p className="mt-6 text-lg/8 text-gray-600">
@@ -82,35 +73,53 @@ export default function Home() {
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               <div className="flex flex-col">
-                <dt className="text-base font-display font-semibold leading-7 text-gray-900">
+                <dt className="flex items-center gap-x-3 text-base/7 font-display font-semibold text-daintree-500">
+                  <span className="material-symbols-outlined text-driftwood-500 text-xl" aria-hidden="true">search_insights</span>
                   Expert Evaluation
                 </dt>
-                <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
                   <p className="flex-auto">
                     Rapid "Sniff Test" assessment that reveals strategic blind spots and hidden opportunities 
                     in half a day.
                   </p>
-                </dd>
-              </div>
-              <div className="flex flex-col">
-                <dt className="text-base font-display font-semibold leading-7 text-gray-900">
-                  Strategic Clarity
-                </dt>
-                <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">
-                    Turn complex challenges into clear direction through proven strategy facilitation 
-                    for leadership teams.
+                  <p className="mt-6">
+                    <Link href="/how-we-work-v3" className="text-sm/6 font-semibold text-driftwood-500 hover:text-driftwood-600">
+                      Learn more <span aria-hidden="true">→</span>
+                    </Link>
                   </p>
                 </dd>
               </div>
               <div className="flex flex-col">
-                <dt className="text-base font-display font-semibold leading-7 text-gray-900">
+                <dt className="flex items-center gap-x-3 text-base/7 font-display font-semibold text-daintree-500">
+                  <span className="material-symbols-outlined text-driftwood-500 text-xl" aria-hidden="true">lightbulb</span>
+                  Strategic Clarity
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+                  <p className="flex-auto">
+                    Turn complex challenges into clear direction through proven strategy facilitation 
+                    for leadership teams.
+                  </p>
+                  <p className="mt-6">
+                    <Link href="/how-we-work-v3" className="text-sm/6 font-semibold text-driftwood-500 hover:text-driftwood-600">
+                      Learn more <span aria-hidden="true">→</span>
+                    </Link>
+                  </p>
+                </dd>
+              </div>
+              <div className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base/7 font-display font-semibold text-daintree-500">
+                  <span className="material-symbols-outlined text-driftwood-500 text-xl" aria-hidden="true">rocket_launch</span>
                   Execution Partnership
                 </dt>
-                <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
                   <p className="flex-auto">
                     Stay engaged to execute what matters most through rapid experimentation 
                     and ongoing advisory.
+                  </p>
+                  <p className="mt-6">
+                    <Link href="/results" className="text-sm/6 font-semibold text-driftwood-500 hover:text-driftwood-600">
+                      See results <span aria-hidden="true">→</span>
+                    </Link>
                   </p>
                 </dd>
               </div>

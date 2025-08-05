@@ -2,161 +2,138 @@ import Navigation from '@/components/Navigation'
 
 export default function Services() {
   return (
-    <div>
-      <Navigation variant="light" position="relative" />
-      <div className="py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h1 className="text-4xl font-display font-semibold tracking-tight text-gray-900 sm:text-6xl">
-            Services
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Strategy facilitation, rapid experimentation, and product diligence for growth-stage SaaS teams.
-          </p>
+    <div className="bg-daintree-500">
+      <Navigation variant="dark" position="relative" />
+      
+      <div className="bg-daintree-500 py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:text-center">
+              <h2 className="text-base/7 font-semibold text-driftwood-500">Core Services</h2>
+              <p className="mt-2 text-4xl font-display font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
+                Everything you need to move from strategy to execution
+              </p>
+              <p className="mt-6 text-lg/8 text-gray-300">
+                Strategy facilitation, rapid experimentation, and product diligence for growth-stage SaaS teams.
+                Each service designed to drive immediate value and confident action.
+              </p>
+            </div>
+            <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                <div className="flex flex-col">
+                  <dt className="flex items-center gap-x-3 text-2xl font-display font-semibold tracking-tight mb-3 text-white">
+                    <span className="material-symbols-outlined icon-large text-driftwood-500" aria-hidden="true">delivery_truck_speed</span>
+                    Strategy that delivers
+                  </dt>
+                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-400">
+                    <p className="flex-auto">
+                      Turn strategic thinking into confident action through our Four Moves framework:
+                      Strategic Diagnosis, Direction Setting, Implementation Design, and Go & See.
+                    </p>
+                    <p className="mt-6">
+                      <a href="/services/strategy-that-delivers" className="text-sm/6 font-semibold text-driftwood-500 hover:text-driftwood-400">
+                        Learn more <span aria-hidden="true">→</span>
+                      </a>
+                    </p>
+                  </dd>
+                </div>
+                <div className="flex flex-col">
+                  <dt className="flex items-center gap-x-3 text-2xl font-display font-semibold tracking-tight mb-3 text-white">
+                    <span className="material-symbols-outlined icon-large text-driftwood-500" aria-hidden="true">science</span>
+                    Rapid Experimentation
+                  </dt>
+                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-400">
+                    <p className="flex-auto">
+                      Customer-led validation through fast learning cycles. 10+ years of proven framework
+                      to design experiments, get data fast, and validate assumptions before big investments.
+                    </p>
+                    <p className="mt-6">
+                      <a href="/services/rapid-experimentation" className="text-sm/6 font-semibold text-driftwood-500 hover:text-driftwood-400">
+                        See results <span aria-hidden="true">→</span>
+                      </a>
+                    </p>
+                  </dd>
+                </div>
+                <div className="flex flex-col">
+                  <dt className="flex items-center gap-x-3 text-2xl font-display font-semibold tracking-tight mb-3 text-white">
+                    <span className="material-symbols-outlined icon-large text-driftwood-500" aria-hidden="true">assessment</span>
+                    Product Diligence
+                  </dt>
+                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-400">
+                    <p className="flex-auto">
+                      Expert evaluation for investment decisions across four dimensions: Commercial viability,
+                      Customer Value, Technical Potential, and Team Capability assessment.
+                    </p>
+                    <p className="mt-6">
+                      <a href="/services/product-advisory" className="text-sm/6 font-semibold text-driftwood-500 hover:text-driftwood-400">
+                        Get started <span aria-hidden="true">→</span>
+                      </a>
+                    </p>
+                  </dd>
+                </div>
+              </dl>
+          </div>
         </div>
 
-        {/* Three Core Services */}
-        <div className="mx-auto mt-16 max-w-6xl">
-          <div className="grid lg:grid-cols-3 gap-8">
-            
-            {/* Strategy Facilitation */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg mb-4">
-                  <span className="text-xl">🎯</span>
-                </div>
-                <h3 className="text-xl font-display font-semibold text-gray-900">
-                  Strategy Facilitation
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  Turn strategic thinking into confident action
-                </p>
-              </div>
-              
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Four Moves of Actionable Strategy</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Strategic Diagnosis - revealing opportunities and barriers</li>
-                    <li>• Direction Setting - creating alignment around decisions</li>
-                    <li>• Implementation Design - building execution foundation</li>
-                    <li>• Go and See - transition from strategy to action</li>
-                  </ul>
-                </div>
-                
-                <div className="pt-4 border-t border-gray-100">
-                  <h4 className="font-semibold text-gray-900 mb-2">Best For</h4>
-                  <p className="text-sm text-gray-600">
-                    Leadership teams with vision and conviction but struggling with execution momentum.
-                    You know where you want to go but need clarity on the practical path forward.
-                  </p>
-                </div>
-              </div>
+        {/* Stats Section */}
+        <div className="mx-auto mt-20 max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:max-w-none">
+            <div className="text-center">
+              <h2 className="text-4xl font-display font-semibold tracking-tight text-balance text-white sm:text-5xl">
+                What Makes Us Different
+              </h2>
+              <p className="mt-4 text-lg/8 text-gray-300">
+                Real results from proven approaches to strategy, experimentation, and product development.
+              </p>
             </div>
-
-            {/* Rapid Experimentation */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 rounded-lg mb-4">
-                  <span className="text-xl">⚡</span>
-                </div>
-                <h3 className="text-xl font-display font-semibold text-gray-900">
-                  Rapid Experimentation
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  Customer-led validation through fast learning cycles
-                </p>
+            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
+              <div className="flex flex-col bg-white/10 backdrop-blur p-8">
+                <dt className="text-sm/6 font-semibold text-gray-300">Placeholder Stat 1</dt>
+                <dd className="order-first text-3xl font-display font-semibold tracking-tight text-white">100%</dd>
               </div>
-              
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Our Approach</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Simple goals and metrics that matter</li>
-                    <li>• Focus attention on risky assumptions first</li>
-                    <li>• Design experiments to learn the right things</li>
-                    <li>• Get data fast, decide what to learn next</li>
-                  </ul>
-                </div>
-                
-                <div className="pt-4 border-t border-gray-100">
-                  <h4 className="font-semibold text-gray-900 mb-2">Best For</h4>
-                  <p className="text-sm text-gray-600">
-                    Teams with strategic clarity who need to validate assumptions before big investments.
-                    Perfect follow-on to strategy facilitation.
-                  </p>
-                </div>
-                
-                <div className="pt-2">
-                  <div className="bg-green-50 p-3 rounded text-sm">
-                    <strong className="text-green-800">10+ years experience</strong><br/>
-                    <span className="text-green-700">Complete framework with proven materials and results</span>
-                  </div>
-                </div>
+              <div className="flex flex-col bg-white/10 backdrop-blur p-8">
+                <dt className="text-sm/6 font-semibold text-gray-300">Placeholder Stat 2</dt>
+                <dd className="order-first text-3xl font-display font-semibold tracking-tight text-white">72hrs</dd>
               </div>
-            </div>
-
-            {/* Product Diligence */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg mb-4">
-                  <span className="text-xl">🔍</span>
-                </div>
-                <h3 className="text-xl font-display font-semibold text-gray-900">
-                  Product Diligence
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  Expert evaluation for investment decisions
-                </p>
+              <div className="flex flex-col bg-white/10 backdrop-blur p-8">
+                <dt className="text-sm/6 font-semibold text-gray-300">Placeholder Stat 3</dt>
+                <dd className="order-first text-3xl font-display font-semibold tracking-tight text-white">10+</dd>
               </div>
-              
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Four Evaluation Dimensions</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Commercial - investment thesis validation</li>
-                    <li>• Customer Value - product-market fit assessment</li>
-                    <li>• Technical Potential - architecture and scale readiness</li>
-                    <li>• Team Capability - delivery and cultural resilience</li>
-                  </ul>
-                </div>
-                
-                <div className="pt-4 border-t border-gray-100">
-                  <h4 className="font-semibold text-gray-900 mb-2">Best For</h4>
-                  <p className="text-sm text-gray-600">
-                    VCs and PE firms evaluating Australian SaaS companies. Complements technical DD
-                    with product insights that shape future returns.
-                  </p>
-                </div>
-              </div>
+            </dl>
+            <div className="mt-8 text-center">
+              <a
+                href="/how-we-work-v3"
+                className="text-sm/6 font-semibold text-driftwood-500 hover:text-driftwood-400"
+              >
+                See how we work <span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Why Different */}
+        {/* Additional Details */}
         <div className="mx-auto mt-20 max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-semibold tracking-tight text-gray-900">
-              What Makes Us Different
+            <h2 className="text-3xl font-display font-semibold tracking-tight text-white">
+              Why Choose Our Approach
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="font-display font-semibold text-gray-900 mb-3">
+            <div className="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20">
+              <h3 className="font-display font-semibold text-white mb-3">
                 Execution, Not Just Theory
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 We don't just theorize - we go deep quickly and lead with action. 
                 Known for tackling the hardest problems with immediate impact.
               </p>
             </div>
             
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="font-display font-semibold text-gray-900 mb-3">
+            <div className="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20">
+              <h3 className="font-display font-semibold text-white mb-3">
                 Strategy + Implementation
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 We bridge executive vision with team execution. Translate "top down" 
                 strategy then get "in the trenches" to execute "bottom up" with teams.
               </p>
@@ -166,24 +143,24 @@ export default function Services() {
 
         {/* Service Flow Integration */}
         <div className="mx-auto mt-20 max-w-4xl text-center">
-          <div className="bg-blue-50 p-8 rounded-lg">
-            <h3 className="text-xl font-display font-semibold text-gray-900 mb-4">
+          <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-white/20">
+            <h3 className="text-xl font-display font-semibold text-white mb-4">
               Services Work Better Together
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-300 mb-6">
               Most successful engagements follow our proven service flows, starting with strategic clarity
               and moving to validated execution.
             </p>
             <div className="flex justify-center space-x-4">
               <a
                 href="/how-we-work-v3"
-                className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-500"
+                className="rounded-md bg-driftwood-500 px-4 py-2 text-sm font-semibold text-white hover:bg-driftwood-400"
               >
                 See How We Work
               </a>
               <a
                 href="/contact"
-                className="rounded-md bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-700"
+                className="rounded-md bg-mulberry-500 px-4 py-2 text-sm font-semibold text-white hover:bg-mulberry-400"
               >
                 Start with Sniff Test
               </a>
@@ -191,7 +168,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }

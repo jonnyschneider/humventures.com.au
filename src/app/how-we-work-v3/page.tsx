@@ -29,7 +29,7 @@ export default function HowWeWorkV3() {
                     Beyond the playbook.
                   </p>
                   <p className="text-white leading-relaxed mb-4">
-                    Everyone's got a playbook. We've even written one. But real success starts with first principles—knowing 
+                    Everyone&apos;s got a playbook. We&apos;ve even written one. But real success starts with first principles—knowing 
                     when to follow the rules and when to break them.
                   </p>
                   <p className="text-white leading-relaxed mb-4 font-semibold">
@@ -52,8 +52,8 @@ export default function HowWeWorkV3() {
                     Day one value.
                   </p>
                   <p className="leading-relaxed mb-4">
-                    Your challenges don't wait for lengthy setups and process decks. We cut straight to what matters, 
-                    because we've seen enough to know where to start and what works.
+                    Your challenges don&apos;t wait for lengthy setups and process decks. We cut straight to what matters, 
+                    because we&apos;ve seen enough to know where to start and what works.
                   </p>
                 </div>
               </div>
@@ -94,11 +94,11 @@ export default function HowWeWorkV3() {
                     Dream team, on demand.
                   </p>
                   <p className="leading-relaxed mb-4">
-                    We don't hire employees. Instead, we build networks of exceptional talent and trusted partners 
+                    We don&apos;t hire employees. Instead, we build networks of exceptional talent and trusted partners 
                     who come together to solve your challenges.
                   </p>
                   <p className="leading-relaxed mb-4 font-semibold">
-                    You get the team you need, not whoever's available.
+                    You get the team you need, not whoever&apos;s available.
                   </p>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export default function HowWeWorkV3() {
                     with flexible engagement models that fit your operating model.
                   </p>
                   <p className="leading-relaxed mb-4 font-semibold">
-                    It's one reason our ask-back rate is 100%
+                    It&apos;s one reason our ask-back rate is 100%
                   </p>
                 </div>
               </div>
@@ -165,7 +165,7 @@ export default function HowWeWorkV3() {
                     Others stop at the strategy deck. We bring both the vision and the know-how to make it real, adapting as we learn. Because good ideas only matter when they work.
                   </p>
                   <p className="leading-relaxed mb-4 font-semibold">
-                    You get the team you need, not whoever's available.
+                    You get the team you need, not whoever&apos;s available.
                   </p>
                 </div>
               </div>
@@ -200,7 +200,7 @@ export default function HowWeWorkV3() {
                   </time>
                   <p className="mt-6 text-lg/8 font-display font-semibold tracking-tight">Strategic Clarity</p>
                   <p className="mt-1 text-med">
-                    Rapid "Sniff Test" and strategy facilitation reveals what matters most. No lengthy discovery - immediate insights and clear direction.
+                    Rapid &quot;Sniff Test&quot; and strategy facilitation reveals what matters most. No lengthy discovery - immediate insights and clear direction.
                   </p>
                 </div>
                 
@@ -266,7 +266,7 @@ export default function HowWeWorkV3() {
                 Ready to experience the difference?
               </h3>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Start with our rapid "Sniff Test" - half a day of expert analysis that reveals what matters most. 
+                Start with our rapid &quot;Sniff Test&quot; - half a day of expert analysis that reveals what matters most. 
                 No lengthy proposals, no big upfront commitments.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

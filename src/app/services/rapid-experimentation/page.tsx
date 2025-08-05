@@ -81,7 +81,7 @@ export default function RapidExperimentation() {
                   <AccordionContent className="flex flex-col gap-3 text-balance text-gray-600 text-sm">
                     <p>
                       Gather results and customer feedback. Look for both quantitative data 
-                      and qualitative insights that reveal the 'why' behind customer behavior.
+                      and qualitative insights that reveal the &apos;why&apos; behind customer behavior.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -92,7 +92,7 @@ export default function RapidExperimentation() {
                   <AccordionContent className="flex flex-col gap-3 text-balance text-gray-600 text-sm">
                     <p>
                       Analyze results and decide: pivot, persevere, or kill the idea. 
-                      Use insights to design next week's experiments.
+                      Use insights to design next week&apos;s experiments.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -103,7 +103,7 @@ export default function RapidExperimentation() {
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 lg:max-w-lg">
                 <p>
-                  Most teams waste months building features customers don't want. Our rapid experimentation framework 
+                  Most teams waste months building features customers don&apos;t want. Our rapid experimentation framework 
                   helps you validate assumptions fast, with real customer data, before making big investments.
                 </p>
                 <ul role="list" className="mt-8 space-y-8">
@@ -135,7 +135,7 @@ export default function RapidExperimentation() {
                 
                 <p className="mt-8">
                   Every experiment produces actionable insights that inform your next move. We help you interpret results, 
-                  iterate on successful experiments, and kill ideas that don't work—fast. The goal is validated learning 
+                  iterate on successful experiments, and kill ideas that don&apos;t work—fast. The goal is validated learning 
                   that de-risks your growth investments.
                 </p>
                 
@@ -148,7 +148,7 @@ export default function RapidExperimentation() {
                 <div className="mt-12 p-6 bg-gray-50 rounded-lg">
                   <h3 className="text-lg font-display font-semibold text-daintree-500 mb-3">Ready to experiment?</h3>
                   <p className="text-gray-600 mb-4">
-                    Start with our rapid "Sniff Test" to identify your riskiest assumptions, then design experiments 
+                    Start with our rapid &quot;Sniff Test&quot; to identify your riskiest assumptions, then design experiments 
                     to validate them quickly.
                   </p>
                   <div className="flex gap-4">

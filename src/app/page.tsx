@@ -66,7 +66,7 @@ export default function Home() {
               Everything starts with understanding what matters
             </p>
             <p className="mt-6 text-lg/8 text-gray-600">
-              Every engagement begins with our rapid "Sniff Test" - expert evaluation that reveals 
+              Every engagement begins with our rapid &quot;Sniff Test&quot; - expert evaluation that reveals 
               strategic blind spots and confirms your instincts in half a day.
             </p>
           </div>
@@ -79,7 +79,7 @@ export default function Home() {
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
                   <p className="flex-auto">
-                    Rapid "Sniff Test" assessment that reveals strategic blind spots and hidden opportunities 
+                    Rapid &quot;Sniff Test&quot; assessment that reveals strategic blind spots and hidden opportunities 
                     in half a day.
                   </p>
                   <p className="mt-6">

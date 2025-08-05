@@ -11,7 +11,7 @@ export default function Contact() {
             Get Started
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Start with our rapid expert evaluation - the "Sniff Test" for your strategic challenges.
+            Start with our rapid expert evaluation - the &quot;Sniff Test&quot; for your strategic challenges.
           </p>
         </div>
       </div>

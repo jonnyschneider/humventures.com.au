@@ -135,9 +135,9 @@ export default function Results() {
         <div className="mx-auto mt-20 max-w-4xl">
           <div className="bg-gray-50 p-8 rounded-lg text-center">
             <blockquote className="text-xl italic text-gray-700 mb-4">
-              "Despite significant investment in capabilities, new customer initiatives took 6 months to launch, 
+              &quot;Despite significant investment in capabilities, new customer initiatives took 6 months to launch, 
               often missing the mark on results. The rapid experimentation framework delivered 90% faster 
-              time to market and helped us kill bad ideas before wasting millions."
+              time to market and helped us kill bad ideas before wasting millions.&quot;
             </blockquote>
             <cite className="text-sm font-semibold text-gray-900">
               — Jasper Streit, Executive Manager Digital

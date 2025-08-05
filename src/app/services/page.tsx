@@ -124,7 +124,7 @@ export default function Services() {
                 Execution, Not Just Theory
               </h3>
               <p className="text-gray-300">
-                We don't just theorize - we go deep quickly and lead with action. 
+                We don&apos;t just theorize - we go deep quickly and lead with action. 
                 Known for tackling the hardest problems with immediate impact.
               </p>
             </div>
@@ -134,8 +134,8 @@ export default function Services() {
                 Strategy + Implementation
               </h3>
               <p className="text-gray-300">
-                We bridge executive vision with team execution. Translate "top down" 
-                strategy then get "in the trenches" to execute "bottom up" with teams.
+                We bridge executive vision with team execution. Translate &quot;top down&quot; 
+                strategy then get &quot;in the trenches&quot; to execute &quot;bottom up&quot; with teams.
               </p>
             </div>
           </div>

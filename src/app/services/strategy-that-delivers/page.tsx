@@ -42,7 +42,7 @@ export default function StrategyThatDelivers() {
                     <span className="material-symbols-outlined icon-large text-driftwood-500 mt-1">stethoscope</span>
                     <span>
                       <strong className="font-semibold text-driftwood-500">1. Strategic Diagnosis.</strong> Get to the heart of 
-                      what's really happening with your business. We cut through assumptions and surface the core challenges 
+                      what&apos;s really happening with your business. We cut through assumptions and surface the core challenges 
                       that matter most for your growth trajectory.
                     </span>
                   </li>
@@ -77,7 +77,7 @@ export default function StrategyThatDelivers() {
                 <div className="mt-12 p-6 bg-gray-50 rounded-lg">
                   <h3 className="text-lg font-display font-semibold text-daintree-500 mb-3">Ready to get started?</h3>
                   <p className="text-gray-600 mb-4">
-                    Begin with our rapid "Sniff Test" - half a day of expert analysis that reveals strategic blind spots 
+                    Begin with our rapid &quot;Sniff Test&quot; - half a day of expert analysis that reveals strategic blind spots 
                     and confirms your instincts.
                   </p>
                   <div className="flex gap-4">

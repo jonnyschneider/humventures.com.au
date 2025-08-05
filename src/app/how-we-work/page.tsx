@@ -19,7 +19,7 @@ export default function HowWeWork() {
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20">
           <div className="text-center">
             <h2 className="text-3xl font-display font-semibold tracking-tight text-gray-900">
-              Start with the "Sniff Test"
+              Start with the &quot;Sniff Test&quot;
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-600">
               Every engagement begins with our rapid expert evaluation - half a day of focused analysis 
@@ -58,7 +58,7 @@ export default function HowWeWork() {
                 </h3>
                 <p className="text-gray-600 mb-6">
                   For leadership teams scaling from ~120+ employees, $5-35M ARR, 
-                  facing the "tipping point" where existing approaches aren't scaling.
+                  facing the &quot;tipping point&quot; where existing approaches aren&apos;t scaling.
                 </p>
                 
                 <div className="space-y-4">
@@ -67,7 +67,7 @@ export default function HowWeWork() {
                       <span className="text-sm font-semibold text-blue-600">1</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">"Sniff Test"</h4>
+                      <h4 className="font-semibold text-gray-900">&quot;Sniff Test&quot;</h4>
                       <p className="text-sm text-gray-600">Rapid expert evaluation of strategic challenges</p>
                     </div>
                   </div>
@@ -159,11 +159,11 @@ export default function HowWeWork() {
               The Most Common Pattern We See
             </h3>
             <blockquote className="text-lg italic text-gray-700 text-center">
-              "You left the strategy offsite believing it was crystal clear and you're all on the same page. 
-              By half-quarter, product, sales, and marketing all believe they're talking about the same thing, 
-              but in fact sales is promising things that don't exist and aren't on the roadmap, Product is 
-              obsessed about a detail that doesn't matter at this scale, and go to market teams are confused 
-              about how to communicate the mess."
+              &quot;You left the strategy offsite believing it was crystal clear and you&apos;re all on the same page. 
+              By half-quarter, product, sales, and marketing all believe they&apos;re talking about the same thing, 
+              but in fact sales is promising things that don&apos;t exist and aren&apos;t on the roadmap, Product is 
+              obsessed about a detail that doesn&apos;t matter at this scale, and go to market teams are confused 
+              about how to communicate the mess.&quot;
             </blockquote>
           </div>
         </div>

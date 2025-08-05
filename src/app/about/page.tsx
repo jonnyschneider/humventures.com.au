@@ -23,7 +23,7 @@ export default function About() {
                 Jonny Schneider
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Author of "Understanding Design Thinking, Lean, and Agile" with a 20+ year career 
+                Author of &quot;Understanding Design Thinking, Lean, and Agile&quot; with a 20+ year career 
                 shipping customer value through strategic design and tech innovation.
               </p>
               <p className="text-gray-600 mb-6">
@@ -36,8 +36,8 @@ export default function About() {
                   Current Positioning
                 </h3>
                 <blockquote className="text-gray-700 italic">
-                  "I help growth-stage SaaS leadership teams get strategic clarity, 
-                  then stay to execute what matters most."
+                  &quot;I help growth-stage SaaS leadership teams get strategic clarity, 
+                  then stay to execute what matters most.&quot;
                 </blockquote>
               </div>
             </div>
@@ -51,7 +51,7 @@ export default function About() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Execution Focus</h4>
                   <p className="text-sm text-gray-600">
-                    Doesn't just theorize - goes deep quickly and leads with action. 
+                    Doesn&apos;t just theorize - goes deep quickly and leads with action. 
                     Known for tackling the hardest problems with immediate impact.
                   </p>
                 </div>
@@ -59,8 +59,8 @@ export default function About() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Actionable Strategy</h4>
                   <p className="text-sm text-gray-600">
-                    Bridges executive vision with team execution. Translates "top down" 
-                    strategy then gets "in the trenches" to execute "bottom up" with teams.
+                    Bridges executive vision with team execution. Translates &quot;top down&quot; 
+                    strategy then gets &quot;in the trenches&quot; to execute &quot;bottom up&quot; with teams.
                   </p>
                 </div>
                 
@@ -105,7 +105,7 @@ export default function About() {
               </h3>
               <p className="text-sm text-gray-600">
                 <strong>Most developed system:</strong> 10+ years experience, dozens of executions. 
-                Complete framework with materials. Can "airdrop" and deliver impressive results.
+                Complete framework with materials. Can &quot;airdrop&quot; and deliver impressive results.
               </p>
             </div>
             
@@ -136,7 +136,7 @@ export default function About() {
             </p>
             <p className="text-sm text-gray-500">
               Pattern recognition across industries provides unique perspective on what works 
-              and what doesn't, regardless of domain specifics.
+              and what doesn&apos;t, regardless of domain specifics.
             </p>
           </div>
         </div>

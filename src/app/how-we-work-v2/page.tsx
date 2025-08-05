@@ -12,7 +12,7 @@ export default function HowWeWorkV2() {
             Principles that drive results
           </p>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-gray-300">
-            These aren't just buzzwords. They're battle-tested principles from working with growth-stage SaaS teams 
+            These aren&apos;t just buzzwords. They&apos;re battle-tested principles from working with growth-stage SaaS teams 
             facing real scaling challenges.
           </p>
           
@@ -30,19 +30,19 @@ export default function HowWeWorkV2() {
                     Pattern Recognition
                   </p>
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center">
-                    Most teams try the same failed approaches. We've seen this movie before - here's what actually works.
+                    Most teams try the same failed approaches. We&apos;ve seen this movie before - here&apos;s what actually works.
                   </p>
                 </div>
                 <div className="relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm p-8">
                   <div className="bg-gray-700/50 rounded-lg p-6 h-full">
                     <blockquote className="text-sm italic text-gray-300 mb-4">
-                      "You left the strategy offsite believing it was crystal clear and you're all on the same page. 
-                      By half-quarter, product, sales, and marketing all believe they're talking about the same thing..."
+                      &quot;You left the strategy offsite believing it was crystal clear and you&apos;re all on the same page. 
+                      By half-quarter, product, sales, and marketing all believe they&apos;re talking about the same thing...&quot;
                     </blockquote>
                     <div className="space-y-2 text-xs text-gray-400">
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-red-400 rounded-full"></div>
-                        <span>Sales promising what doesn't exist</span>
+                        <span>Sales promising what doesn&apos;t exist</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
@@ -71,7 +71,7 @@ export default function HowWeWorkV2() {
                     Execution Over Theory
                   </p>
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center">
-                    We don't just theorize - we go deep quickly and lead with action.
+                    We don&apos;t just theorize - we go deep quickly and lead with action.
                   </p>
                 </div>
                 <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
@@ -99,7 +99,7 @@ export default function HowWeWorkV2() {
                     Bridge Strategy & Teams
                   </p>
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center">
-                    Translate "top down" strategy then get "in the trenches" to execute "bottom up".
+                    Translate &quot;top down&quot; strategy then get &quot;in the trenches&quot; to execute &quot;bottom up&quot;.
                   </p>
                 </div>
                 <div className="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2 px-8">
@@ -178,11 +178,11 @@ export default function HowWeWorkV2() {
                     No Best Practice Dogma
                   </p>
                   <p className="mt-2 text-sm/6 text-gray-300">
-                    What works at Amazon or Spotify probably won't work in your organization. 
+                    What works at Amazon or Spotify probably won&apos;t work in your organization. 
                     We focus on better practice, not best practice.
                   </p>
                   <div className="mt-4 text-xs text-gray-400 italic">
-                    "Proudly uncertified" - Results matter, not frameworks
+                    &quot;Proudly uncertified&quot; - Results matter, not frameworks
                   </div>
                 </div>
               </div>
@@ -201,11 +201,11 @@ export default function HowWeWorkV2() {
                     Partnership Approach
                   </p>
                   <p className="mt-2 text-sm/6 text-gray-300">
-                    We don't just consult and disappear. Once clients see results, they typically want 
+                    We don&apos;t just consult and disappear. Once clients see results, they typically want 
                     to continue the partnership for ongoing execution support.
                   </p>
                   <div className="mt-4 text-xs text-gray-400">
-                    "Let's try a small thing for 2 weeks" → Long-term strategic partnership
+                    &quot;Let&apos;s try a small thing for 2 weeks&quot; → Long-term strategic partnership
                   </div>
                 </div>
               </div>
@@ -220,7 +220,7 @@ export default function HowWeWorkV2() {
                 See These Principles in Action
               </h3>
               <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                Every engagement starts with our rapid "Sniff Test" - half a day of expert pattern recognition 
+                Every engagement starts with our rapid &quot;Sniff Test&quot; - half a day of expert pattern recognition 
                 that reveals what matters most for your specific situation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -53,6 +53,16 @@ export const postType = defineType({
       ],
     }),
     defineField({
+      name: 'articleImage',
+      type: 'image',
+      fields: [{
+        name: 'alt',
+        type: 'string',
+        title: 'Alternative text',
+        },
+      ],
+    }),
+    defineField({
       name: 'categories',
       type: 'array',
       of: [{ type: 'reference', to: { type: 'category' } }],

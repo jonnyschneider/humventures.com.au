@@ -15,11 +15,11 @@ export default function HowWeWork() {
           </p>
         </div>
 
-        {/* Sniff Test Introduction */}
+        {/* The Spark Introduction */}
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20">
           <div className="text-center">
             <h2 className="text-3xl font-display font-semibold tracking-tight text-gray-900">
-              Start with the &quot;Sniff Test&quot;
+              Start with &quot;The Spark&quot;
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-600">
               Every engagement begins with our rapid expert evaluation - half a day of focused analysis 
@@ -67,7 +67,7 @@ export default function HowWeWork() {
                       <span className="text-sm font-semibold text-blue-600">1</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">&quot;Sniff Test&quot;</h4>
+                      <h4 className="font-semibold text-gray-900">&quot;The Spark&quot;</h4>
                       <p className="text-sm text-gray-600">Rapid expert evaluation of strategic challenges</p>
                     </div>
                   </div>
@@ -174,7 +174,7 @@ export default function HowWeWork() {
             href="/contact"
             className="rounded-md bg-gray-900 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           >
-            Start with the Sniff Test
+            Start with The Spark
           </a>
           <p className="mt-4 text-sm text-gray-600">
             Half a day of expert analysis. Less than $1,000. Strategic insights that matter.

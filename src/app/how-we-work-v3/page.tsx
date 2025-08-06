@@ -200,7 +200,7 @@ export default function HowWeWorkV3() {
                   </time>
                   <p className="mt-6 text-lg/8 font-display font-semibold tracking-tight">Strategic Clarity</p>
                   <p className="mt-1 text-med">
-                    Rapid &quot;Sniff Test&quot; and strategy facilitation reveals what matters most. No lengthy discovery - immediate insights and clear direction.
+                    Rapid &quot;The Spark&quot; and strategy facilitation reveals what matters most. No lengthy discovery - immediate insights and clear direction.
                   </p>
                 </div>
                 
@@ -266,7 +266,7 @@ export default function HowWeWorkV3() {
                 Ready to experience the difference?
               </h3>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Start with our rapid &quot;Sniff Test&quot; - half a day of expert analysis that reveals what matters most. 
+                Start with our rapid &quot;The Spark&quot; - half a day of expert analysis that reveals what matters most. 
                 No lengthy proposals, no big upfront commitments.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -274,7 +274,7 @@ export default function HowWeWorkV3() {
                   href="/contact"
                   className="rounded-md bg-mulberry-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-mulberry-500/80"
                 >
-                  Start with the Sniff Test
+                  Start with The Spark
                 </a>
                 <a
                   href="/results"

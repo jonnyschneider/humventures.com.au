@@ -157,7 +157,7 @@ export default function ProductAdvisory() {
               Ready to get expert product guidance?
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg/8 text-gray-600">
-              Start with our rapid &quot;Sniff Test&quot; to understand your product challenges and opportunities. 
+              Start with our rapid &quot;The Spark&quot; to understand your product challenges and opportunities. 
               No lengthy proposals, just immediate insights.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -165,7 +165,7 @@ export default function ProductAdvisory() {
                 href="/contact"
                 className="rounded-md bg-mulberry-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-mulberry-400"
               >
-                Start with Sniff Test
+                Start with The Spark
               </a>
               <a
                 href="/how-we-work-v3"

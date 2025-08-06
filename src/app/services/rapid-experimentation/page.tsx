@@ -21,19 +21,21 @@ export default function RapidExperimentation() {
                   Rapid Experimentation
                 </h1>
                 <p className="mt-6 text-xl/8 text-gray-700">
-                  Customer-led validation through fast learning cycles. 10+ years of proven framework 
-                  to design experiments, get data fast, and validate assumptions before big investments.
+                  Customer-led validation through fast learning cycles. Get the data you need to make confident decisions before big investments
                 </p>
               </div>
             </div>
           </div>
           <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
             <div className="w-full max-w-xl rounded-xl bg-gray-50 shadow-sm ring-1 ring-gray-400/10 p-8">
-              <h3 className="text-xl font-display font-semibold text-daintree-500 mb-4">Speed of Customer Learning</h3>
-              <p className="text-gray-600 mb-6 text-sm">
-                The fastest way to reduce risk is to reduce the cost of experimentation. 
-                Instead of building features and hoping customers want them, we design 
-                cheap tests that generate real customer insights in days, not months.
+              <h3 className="text-xl font-display font-semibold text-daintree-500 mb-4">Building a Learning Culture</h3>
+              <p className="mb-6 text-sm">
+                The cost of experimentation is lower than ever, yet more experiments don't guarantee more success. 
+                We help you build a culture of experimentation where the goal isn't to prove you're right, but to discover what's right. 
+                By building wisdom with your teams, week after week, you can turn assumptions into confident decisions faster.
+              </p>
+              <p className="mb-6 text-sm">
+                Whether continuous and ongoing, or in short, intensive bursts, the steps to de-risking your ideas and generating validated learning are the same. Here's how it works:
               </p>
               <Accordion
                 type="single"
@@ -43,7 +45,7 @@ export default function RapidExperimentation() {
               >
                 <AccordionItem value="monday" className="border-gray-200">
                   <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-daintree-500">
-                    Monday: Decide what to learn
+                    Decide what to learn
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-3 text-balance text-gray-600 text-sm">
                     <p>
@@ -54,7 +56,7 @@ export default function RapidExperimentation() {
                 </AccordionItem>
                 <AccordionItem value="tuesday" className="border-gray-200">
                   <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-daintree-500">
-                    Tuesday: Design experiments to learn the right things
+                    Design experiments to learn the right things
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-3 text-balance text-gray-600 text-sm">
                     <p>
@@ -65,7 +67,7 @@ export default function RapidExperimentation() {
                 </AccordionItem>
                 <AccordionItem value="wednesday" className="border-gray-200">
                   <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-daintree-500">
-                    Wednesday: Test with customer
+                    Test with customer
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-3 text-balance text-gray-600 text-sm">
                     <p>
@@ -76,7 +78,7 @@ export default function RapidExperimentation() {
                 </AccordionItem>
                 <AccordionItem value="thursday" className="border-gray-200">
                   <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-daintree-500">
-                    Thursday: Get the data, understand what it says
+                    Get the data, understand what it says
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-3 text-balance text-gray-600 text-sm">
                     <p>
@@ -87,7 +89,7 @@ export default function RapidExperimentation() {
                 </AccordionItem>
                 <AccordionItem value="friday" className="border-gray-200">
                   <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-daintree-500">
-                    Friday: Decide what to learn next
+                    Decide what to learn next
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-3 text-balance text-gray-600 text-sm">
                     <p>
@@ -110,25 +112,23 @@ export default function RapidExperimentation() {
                   <li className="flex gap-x-3">
                     <span className="material-symbols-outlined icon-large text-driftwood-500 mt-1">science</span>
                     <span>
-                      <strong className="font-semibold text-driftwood-500">Hypothesis Design.</strong> Turn business assumptions 
-                      into testable hypotheses. We help you identify the riskiest assumptions and design cheap, fast experiments 
-                      to validate or invalidate them.
+                      <strong className="font-semibold text-driftwood-500">De-risk Your Assumptions.</strong> Turn business assumptions 
+                      into testable hypotheses. We help you identify the risky assumptions and design cheap, fast experiments 
+                      that deliver validated learning at the speed of decision making.
                     </span>
                   </li>
                   <li className="flex gap-x-3">
                     <span className="material-symbols-outlined icon-large text-driftwood-500 mt-1">speed</span>
                     <span>
-                      <strong className="font-semibold text-driftwood-500">Fast Learning Cycles.</strong> Get meaningful data 
-                      in days, not months. Our framework emphasizes speed and iteration, helping you learn what customers 
-                      actually want before committing resources.
+                      <strong className="font-semibold text-driftwood-500">Fast Learning Cycles.</strong> When speed matters, get meaningful 
+                      data in days, not months. Learn what customers actually want, and measure behaviour before betting on gut feels alone.
                     </span>
                   </li>
                   <li className="flex gap-x-3">
                     <span className="material-symbols-outlined icon-large text-driftwood-500 mt-1">analytics</span>
                     <span>
-                      <strong className="font-semibold text-driftwood-500">Data-Driven Decisions.</strong> Move beyond opinions 
-                      and gut feelings. We help you design experiments that generate clear, actionable insights about customer 
-                      behavior and market demand.
+                      <strong className="font-semibold text-driftwood-500">Data-informed Decisions.</strong> Move beyond opinions and intuition. 
+                      The right experiments generate clear, actionable insights for decisions you need to make.
                     </span>
                   </li>
                 </ul>
@@ -138,17 +138,11 @@ export default function RapidExperimentation() {
                   iterate on successful experiments, and kill ideas that don&apos;t work—fast. The goal is validated learning 
                   that de-risks your growth investments.
                 </p>
-                
-                <h2 className="mt-16 text-2xl font-display font-bold tracking-tight text-daintree-500">From Experiment to Scale</h2>
-                <p className="mt-6">
-                  The interactive experiment guide in the sidebar shows our three core validation approaches. Each type addresses 
-                  different risk areas and uses specific methods designed for speed and accuracy.
-                </p>
-                
+                                
                 <div className="mt-12 p-6 bg-gray-50 rounded-lg">
                   <h3 className="text-lg font-display font-semibold text-daintree-500 mb-3">Ready to experiment?</h3>
                   <p className="text-gray-600 mb-4">
-                    Start with our rapid &quot;Sniff Test&quot; to identify your riskiest assumptions, then design experiments 
+                    Start with our rapid &quot;The Spark&quot; to identify your riskiest assumptions, then design experiments 
                     to validate them quickly.
                   </p>
                   <div className="flex gap-4">

@@ -34,7 +34,7 @@ export default function Home() {
                   href="/contact"
                   className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                 >
-                  Start with the Sniff Test
+                  Start with The Spark
                 </Link>
                 <Link href="/how-we-work-v3" className="text-sm/6 font-semibold text-white">
                   How we work <span aria-hidden="true">→</span>
@@ -66,7 +66,7 @@ export default function Home() {
               Everything starts with understanding what matters
             </p>
             <p className="mt-6 text-lg/8 text-gray-600">
-              Every engagement begins with our rapid &quot;Sniff Test&quot; - expert evaluation that reveals 
+              Every engagement begins with our rapid &quot;The Spark&quot; - expert evaluation that reveals 
               strategic blind spots and confirms your instincts in half a day.
             </p>
           </div>
@@ -79,7 +79,7 @@ export default function Home() {
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
                   <p className="flex-auto">
-                    Rapid &quot;Sniff Test&quot; assessment that reveals strategic blind spots and hidden opportunities 
+                    Rapid &quot;The Spark&quot; assessment that reveals strategic blind spots and hidden opportunities 
                     in half a day.
                   </p>
                   <p className="mt-6">

@@ -220,7 +220,7 @@ export default function HowWeWorkV2() {
                 See These Principles in Action
               </h3>
               <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                Every engagement starts with our rapid &quot;Sniff Test&quot; - half a day of expert pattern recognition 
+                Every engagement starts with our rapid &quot;The Spark&quot; - half a day of expert pattern recognition 
                 that reveals what matters most for your specific situation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -228,7 +228,7 @@ export default function HowWeWorkV2() {
                   href="/contact"
                   className="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500"
                 >
-                  Start with the Sniff Test
+                  Start with The Spark
                 </a>
                 <a
                   href="/results"

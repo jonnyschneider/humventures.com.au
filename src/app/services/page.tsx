@@ -79,7 +79,7 @@ export default function Services() {
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center">
               <h2 className="text-4xl font-display font-semibold tracking-tight text-balance text-white sm:text-5xl">
-                What Makes Us Different
+                Different
               </h2>
               <p className="mt-4 text-lg/8 text-gray-300">
                 Real results from proven approaches to strategy, experimentation, and product development.
@@ -87,16 +87,16 @@ export default function Services() {
             </div>
             <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
               <div className="flex flex-col bg-white/10 backdrop-blur p-8">
-                <dt className="text-sm/6 font-semibold text-gray-300">Placeholder Stat 1</dt>
-                <dd className="order-first text-3xl font-display font-semibold tracking-tight text-white">100%</dd>
+                <dt className="text-sm/6 text-white">We believe one-size-fits-none. That's why we create teams on-demand from a network of specialists, giving you the exact expertise you need to win.</dt>
+                <dd className="order-first text-xl mb-4 font-display font-semibold tracking-tight text-white">Beyond the Agency</dd>
               </div>
               <div className="flex flex-col bg-white/10 backdrop-blur p-8">
-                <dt className="text-sm/6 font-semibold text-gray-300">Placeholder Stat 2</dt>
-                <dd className="order-first text-3xl font-display font-semibold tracking-tight text-white">72hrs</dd>
+                <dt className="text-sm/6 text-white">We know the playbooks, but we don't let them slow us down. We cut through the noise and get to what matters, delivering tangible results fast.</dt>
+                <dd className="order-first text-xl mb-4 font-display font-semibold tracking-tight text-white">The Expert Shortcut</dd>
               </div>
               <div className="flex flex-col bg-white/10 backdrop-blur p-8">
-                <dt className="text-sm/6 font-semibold text-gray-300">Placeholder Stat 3</dt>
-                <dd className="order-first text-3xl font-display font-semibold tracking-tight text-white">10+</dd>
+                <dt className="text-sm/6 text-white">Our work isn't finished until your teams are stronger, smarter, and equipped to thrive long after we've gone.</dt>
+                <dd className="order-first text-xl mb-4 font-display font-semibold tracking-tight text-white">Leave it better</dd>
               </div>
             </dl>
             <div className="mt-8 text-center">
@@ -105,64 +105,6 @@ export default function Services() {
                 className="text-sm/6 font-semibold text-driftwood-500 hover:text-driftwood-400"
               >
                 See how we work <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Additional Details */}
-        <div className="mx-auto mt-20 max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-semibold tracking-tight text-white">
-              Why Choose Our Approach
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20">
-              <h3 className="font-display font-semibold text-white mb-3">
-                Execution, Not Just Theory
-              </h3>
-              <p className="text-gray-300">
-                We don&apos;t just theorize - we go deep quickly and lead with action. 
-                Known for tackling the hardest problems with immediate impact.
-              </p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20">
-              <h3 className="font-display font-semibold text-white mb-3">
-                Strategy + Implementation
-              </h3>
-              <p className="text-gray-300">
-                We bridge executive vision with team execution. Translate &quot;top down&quot; 
-                strategy then get &quot;in the trenches&quot; to execute &quot;bottom up&quot; with teams.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Service Flow Integration */}
-        <div className="mx-auto mt-20 max-w-4xl text-center">
-          <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-white/20">
-            <h3 className="text-xl font-display font-semibold text-white mb-4">
-              Services Work Better Together
-            </h3>
-            <p className="text-gray-300 mb-6">
-              Most successful engagements follow our proven service flows, starting with strategic clarity
-              and moving to validated execution.
-            </p>
-            <div className="flex justify-center space-x-4">
-              <a
-                href="/how-we-work-v3"
-                className="rounded-md bg-driftwood-500 px-4 py-2 text-sm font-semibold text-white hover:bg-driftwood-400"
-              >
-                See How We Work
-              </a>
-              <a
-                href="/contact"
-                className="rounded-md bg-mulberry-500 px-4 py-2 text-sm font-semibold text-white hover:bg-mulberry-400"
-              >
-                Start with Sniff Test
               </a>
             </div>
           </div>

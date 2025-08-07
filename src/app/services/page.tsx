@@ -87,15 +87,15 @@ export default function Services() {
             </div>
             <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
               <div className="flex flex-col bg-white/10 backdrop-blur p-8">
-                <dt className="text-sm/6 text-white">We believe one-size-fits-none. That's why we create teams on-demand from a network of specialists, giving you the exact expertise you need to win.</dt>
+                <dt className="text-sm/6 text-white">We believe one-size-fits-none. That&apos;s why we create teams on-demand from a network of specialists, giving you the exact expertise you need to win.</dt>
                 <dd className="order-first text-xl mb-4 font-display font-semibold tracking-tight text-white">Beyond the Agency</dd>
               </div>
               <div className="flex flex-col bg-white/10 backdrop-blur p-8">
-                <dt className="text-sm/6 text-white">We know the playbooks, but we don't let them slow us down. We cut through the noise and get to what matters, delivering tangible results fast.</dt>
+                <dt className="text-sm/6 text-white">We know the playbooks, but we don&apos;t let them slow us down. We cut through the noise and get to what matters, delivering tangible results fast.</dt>
                 <dd className="order-first text-xl mb-4 font-display font-semibold tracking-tight text-white">The Expert Shortcut</dd>
               </div>
               <div className="flex flex-col bg-white/10 backdrop-blur p-8">
-                <dt className="text-sm/6 text-white">Our work isn't finished until your teams are stronger, smarter, and equipped to thrive long after we've gone.</dt>
+                <dt className="text-sm/6 text-white">Our work isn&apos;t finished until your teams are stronger, smarter, and equipped to thrive long after we&apos;ve gone.</dt>
                 <dd className="order-first text-xl mb-4 font-display font-semibold tracking-tight text-white">Leave it better</dd>
               </div>
             </dl>

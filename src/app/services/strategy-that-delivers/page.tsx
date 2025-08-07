@@ -33,7 +33,7 @@ export default function StrategyThatDelivers() {
               <div className="max-w-xl text-base/7 lg:max-w-lg">
                 <p>
                    By combining ambitious thinking with deep product experience, we turn complex choices into confident action.
-                   Whether you're scaling a successful product or transforming capabilities, we bring clarity to what's possible and what's next.
+                   Whether you&apos;re scaling a successful product or transforming capabilities, we bring clarity to what&apos;s possible and what&apos;s next.
                 </p>
                 <ul role="list" className="mt-8 space-y-8">
                   <li className="flex gap-x-3">

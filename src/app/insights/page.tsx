@@ -30,7 +30,7 @@ async function FeaturedPosts() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-2xl font-display font-medium tracking-tight text-daintree-500">Featured</h2>
         <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {featuredPosts.map((post) => (
+          {featuredPosts.map((post: any) => (
             <div
               key={post.slug}
               className="relative flex flex-col rounded-xl bg-white p-2 shadow-md ring-1 shadow-black/5 ring-black/5"
@@ -95,7 +95,7 @@ async function Posts({ page, category }: { page: number; category?: string }) {
 
   return (
     <div className="mt-6">
-      {posts.map((post) => (
+      {posts.map((post: any) => (
         <div
           key={post.slug}
           className="relative grid grid-cols-1 border-b border-b-gray-100 py-10 first:border-t first:border-t-gray-200 max-sm:gap-3 sm:grid-cols-3"

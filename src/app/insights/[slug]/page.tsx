@@ -31,7 +31,7 @@ export default async function BlogPost({
       
       <div className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-16 sm:py-24">
+          <div className="py-16 sm:py-24">
             <div className="text-center mb-8">
               <p className="text-base/7 font-semibold text-driftwood-500">
                 {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}

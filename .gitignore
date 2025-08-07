@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# static images (used for dev, hosted in CDN for prod)
+/images_static
+
 # dependencies
 /node_modules
 /.pnp

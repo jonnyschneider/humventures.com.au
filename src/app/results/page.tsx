@@ -1,4 +1,7 @@
 import Navigation from '@/components/Navigation'
+import CallToAction from '@/components/CallToAction'
+import StatsSection from '@/components/StatsSection'
+import LogoCloud from '@/components/LogoCloud'
 
 export default function Results() {
   return (
@@ -36,7 +39,29 @@ export default function Results() {
                   </div>
                   <h3 className="text-2xl font-display font-semibold text-white mb-2">Phantm</h3>
                   <p className="text-sm text-gray-200 mb-1">Industry: SaaS Technology</p>
-                  <p className="text-sm text-gray-300">Mission: Revolutionizing customer feedback through AI-powered insights</p>
+                  <p className="text-sm text-gray-300 mb-8">Mission: Revolutionizing customer feedback through AI-powered insights</p>
+                  
+                  {/* Integrated Testimonial */}
+                  <div className="border-t border-white/20 pt-6">
+                    <blockquote className="text-lg/7 text-gray-100 italic mb-4">
+                      <p>
+                        "The strategic clarity process cut through months of internal debate in just 3 days. 
+                        More importantly, the rapid experimentation approach helped us validate our biggest bets 
+                        before committing serious resources."
+                      </p>
+                    </blockquote>
+                    <div className="flex items-center gap-x-3">
+                      <img
+                        alt=""
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        className="size-10 rounded-full"
+                      />
+                      <div className="text-sm">
+                        <div className="font-semibold text-white">Michael Chen</div>
+                        <div className="text-gray-300">Head of Product Strategy</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -124,92 +149,56 @@ export default function Results() {
                   </div>
                   <h3 className="text-2xl font-display font-semibold text-white mb-2">Major Insurance Group</h3>
                   <p className="text-sm text-gray-200 mb-1">Industry: Financial Services & Insurance</p>
-                  <p className="text-sm text-gray-300">Mission: Protecting what matters most through innovative insurance solutions</p>
+                  <p className="text-sm text-gray-300 mb-8">Mission: Protecting what matters most through innovative insurance solutions</p>
+                  
+                  {/* Integrated Testimonial */}
+                  <div className="border-t border-white/20 pt-6">
+                    <blockquote className="text-lg/7 text-gray-100 italic mb-4">
+                      <p>
+                        "Despite significant investment in capabilities, new customer initiatives took 6 months to launch, 
+                        often missing the mark on results. The rapid experimentation framework delivered 90% faster 
+                        time to market and helped us kill bad ideas before wasting millions."
+                      </p>
+                    </blockquote>
+                    <div className="flex items-center gap-x-3">
+                      <img
+                        alt=""
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        className="size-10 rounded-full"
+                      />
+                      <div className="text-sm">
+                        <div className="font-semibold text-white">Jasper Streit</div>
+                        <div className="text-gray-300">Executive Manager Digital</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Testimonial Section */}
-        <div className="mx-auto mt-20 max-w-4xl">
-          <div className="bg-gray-50 p-8 rounded-lg text-center">
-            <blockquote className="text-xl italic text-gray-700 mb-4">
-              &quot;Despite significant investment in capabilities, new customer initiatives took 6 months to launch, 
-              often missing the mark on results. The rapid experimentation framework delivered 90% faster 
-              time to market and helped us kill bad ideas before wasting millions.&quot;
-            </blockquote>
-            <cite className="text-sm font-semibold text-gray-900">
-              — Jasper Streit, Executive Manager Digital
-            </cite>
-          </div>
-        </div>
-
-        {/* Pattern Recognition */}
-        <div className="mx-auto mt-20 max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-semibold tracking-tight text-gray-900">
-              Common Success Patterns
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg mb-4">
-                <span className="text-xl">⚡</span>
-              </div>
-              <h3 className="font-display font-semibold text-gray-900 mb-2">
-                Rapid Clarity
-              </h3>
-              <p className="text-sm text-gray-600">
-                Strategic challenges that seemed complex become clear direction 
-                within days, not months.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 rounded-lg mb-4">
-                <span className="text-xl">🎯</span>
-              </div>
-              <h3 className="font-display font-semibold text-gray-900 mb-2">
-                Validated Execution
-              </h3>
-              <p className="text-sm text-gray-600">
-                Customer learning cycles de-risk big decisions and 
-                validate strategic bets before major investment.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg mb-4">
-                <span className="text-xl">🚀</span>
-              </div>
-              <h3 className="font-display font-semibold text-gray-900 mb-2">
-                Sustained Momentum
-              </h3>
-              <p className="text-sm text-gray-600">
-                Teams gain confidence and capability to continue 
-                executing independently with ongoing advisory support.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mx-auto mt-16 max-w-2xl text-center">
-          <h3 className="text-xl font-display font-semibold text-gray-900 mb-4">
-            Ready for Similar Results?
-          </h3>
-          <p className="text-gray-600 mb-6">
-            Every successful engagement starts with understanding your specific strategic challenges.
-          </p>
-          <a
-            href="/contact"
-            className="rounded-md bg-gray-900 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-          >
-            Start with The Spark
-          </a>
-        </div>
+        <StatsSection 
+          title="Common Success Patterns"
+          subtitle="Consistent outcomes across our client engagements demonstrate proven approaches to strategic clarity and execution."
+          variant="light"
+          stats={[
+            {
+              title: "Rapid Clarity",
+              description: "Strategic challenges that seemed complex become clear direction within days, not months."
+            },
+            {
+              title: "Validated Execution", 
+              description: "Customer learning cycles de-risk big decisions and validate strategic bets before major investment."
+            },
+            {
+              title: "Sustained Momentum",
+              description: "Teams gain confidence and capability to continue executing independently with ongoing advisory support."
+            }
+          ]}
+        />
+        <LogoCloud />
+        <CallToAction />
       </div>
     </div>
     </div>

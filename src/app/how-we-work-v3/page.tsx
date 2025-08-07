@@ -2,10 +2,10 @@ import Navigation from '@/components/Navigation'
 
 export default function HowWeWorkV3() {
   return (
-    <div className="bg-daintree-500 text-neutral-950 text-med">
+    <div className="bg-daintree-700 text-neutral-950 text-med">
       <Navigation variant="dark" position="relative" />
       
-      <div className="bg-daintree-500 py-24 sm:py-32">
+      <div className="bg-daintree-700 py-24 sm:py-32">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <h2 className="text-center text-med font-semibold text-white">How we work</h2>
           <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-display font-semibold tracking-tight text-balance text-white sm:text-5xl">

@@ -3,7 +3,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: oklch(0.1842 0.0186 201.9248);
 }
 
 @theme inline {
@@ -49,7 +49,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: oklch(0.6423 0.0220 204.2967);
     --foreground: #ededed;
   }
 }

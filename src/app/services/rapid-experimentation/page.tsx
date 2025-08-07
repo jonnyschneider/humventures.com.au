@@ -30,7 +30,7 @@ export default function RapidExperimentation() {
             <div className="w-full max-w-xl rounded-xl bg-gray-50 shadow-sm ring-1 ring-gray-400/10 p-8">
               <h3 className="text-xl font-display font-semibold text-daintree-500 mb-4">Building a Learning Culture</h3>
               <p className="mb-6 text-sm">
-                The cost of experimentation is lower than ever, yet more experiments don't guarantee more success. 
+                The cost of experimentation is lower than ever, yet more experiments don&apos;t guarantee more success. 
                 We help you build a culture of experimentation where the goal isn&apos;t to prove you&apos;re right, but to discover what&apos;s right. 
                 By building wisdom with your teams, week after week, you can turn assumptions into confident decisions faster.
               </p>

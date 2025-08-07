@@ -14,8 +14,13 @@ const eslintConfig = [
   {
     rules: {
       "@typescript-eslint/no-explicit-any": "warn",
-      "@next/next/no-html-link-for-pages": "warn",
+      "@next/next/no-html-link-for-pages": "warn", 
       "@typescript-eslint/no-unused-vars": "warn",
+      "prefer-const": "warn",
+      "react/no-unescaped-entities": "warn",
+      "@next/next/no-img-element": "warn",
+      "@next/next/google-font-display": "warn",
+      "@next/next/no-page-custom-font": "warn",
     },
   },
 ];

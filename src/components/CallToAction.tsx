@@ -12,8 +12,8 @@ export default function CallToAction({ variant = 'default', className = '' }: Ca
     : 'text-sm/6 font-semibold text-daintree-500 hover:text-daintree-400'
 
   return (
-    <div className={`${bgClass} py-24 sm:py-32 ${className}`}>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className={`${bgClass} pt-24 sm:pt-32 ${className}`}>
+      <div className="mx-auto max-w-7xl p-6 lg:p-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className={`text-3xl font-display font-bold tracking-tight ${headingClass} sm:text-4xl`}>
             Spark into action
@@ -25,16 +25,10 @@ export default function CallToAction({ variant = 'default', className = '' }: Ca
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="/contact"
+              href="/services/start-with-the-spark"
               className="rounded-md bg-mulberry-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-mulberry-400"
             >
               Start with The Spark
-            </a>
-            <a
-              href="/how-we-work-v3"
-              className={primaryLinkClass}
-            >
-              See How We Work <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>

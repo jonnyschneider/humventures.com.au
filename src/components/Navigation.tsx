@@ -29,13 +29,13 @@ const servicesOptions = [
   {
     name: 'Product Diligence',
     description: 'Expert evaluation across commercial, customer, technical and team dimensions',
-    href: '/services/product-diligence',
+    href: '/services/product-advisory#diligence',
     icon: MapPinIcon,
   },
   {
     name: 'Interim Product Leadership',
     description: 'On-demand senior product expertise to bridge capability gaps',
-    href: '/services/interim-leadership',
+    href: '/services/product-advisory#fractional',
     icon: PhoneIcon,
   },
 ]
@@ -112,19 +112,16 @@ export default function Navigation({ variant = 'dark', position = 'absolute' }: 
 
             <PopoverPanel
               transition
-              className="fixed left-0 right-0 bg-white shadow-lg transition data-closed:-translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in z-50"
+              className="fixed left-0 right-0 bg-white shadow-md transition data-closed:-translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in z-50"
               style={{ top: '80px' }}
             >
               {/* Presentational element for shadow */}
-              <div aria-hidden="true" className="absolute inset-0 top-1/2 bg-white shadow-lg ring-1 ring-gray-900/5" />
+              <div aria-hidden="true" className="absolute inset-0 top-1/2 bg-white shadow-md ring-1 ring-gray-900/5" />
               <div className="relative bg-white">
-                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
+                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-5 lg:px-8 xl:gap-x-8">
                   {servicesOptions.map((item) => (
-                    <div key={item.name} className="group relative rounded-lg p-6 text-sm/6 hover:bg-gray-50">
-                      <div className="flex size-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-mulberry-600" />
-                      </div>
-                      <Link href={item.href} className="mt-6 block font-semibold text-gray-900">
+                    <div key={item.name} className="group relative rounded-lg p-3 text-sm/6 hover:bg-gray-50">
+                      <Link href={item.href} className="block font-bold text-driftwood-500">
                         {item.name}
                         <span className="absolute inset-0" />
                       </Link>
@@ -132,22 +129,14 @@ export default function Navigation({ variant = 'dark', position = 'absolute' }: 
                     </div>
                   ))}
                 </div>
-                <div className="bg-gray-50">
+                <div className="bg-driftwood-500">
                   <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="grid grid-cols-2 divide-x divide-gray-900/5 border-x border-gray-900/5">
+                    <div className="flex justify-center">
                       <Link
                         href="/services"
-                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
+                        className="flex items-center justify-center p-3 text-sm/6 font-semibold text-white hover:bg-driftwood-400"
                       >
-                        <EnvelopeIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
                         View all services
-                      </Link>
-                      <Link
-                        href="/contact"
-                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-                      >
-                        <PhoneIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
-                        Discuss your needs
                       </Link>
                     </div>
                   </div>
@@ -170,39 +159,38 @@ export default function Navigation({ variant = 'dark', position = 'absolute' }: 
 
             <PopoverPanel
               transition
-              className="fixed left-0 right-0 bg-white shadow-lg transition data-closed:-translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in z-50"
+              className="fixed left-0 right-0 bg-white shadow-md transition data-closed:-translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in z-50"
               style={{ top: '80px' }}
             >
               {/* Presentational element for shadow */}
-              <div aria-hidden="true" className="absolute inset-0 top-1/2 bg-white shadow-lg ring-1 ring-gray-900/5" />
+              <div aria-hidden="true" className="absolute inset-0 top-1/2 bg-white shadow-md ring-1 ring-gray-900/5" />
               <div className="relative bg-white">
-                <div className="mx-auto grid max-w-7xl grid-cols-3 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
-                  {contactOptions.map((item) => (
-                    <div key={item.name} className="group relative rounded-lg p-6 text-sm/6 hover:bg-gray-50">
-                      <div className="flex size-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-mulberry-600" />
+                <div className="mx-auto max-w-7xl px-6 py-5 lg:px-8">
+                  <div className="flex justify-center items-center gap-8 text-sm/6 text-gray-700">
+                    <div className="flex items-center gap-2">
+                      <div className="inline-flex rounded">
+                        <span className="material-symbols-outlined icon-medium text-driftwood-500">store</span>
                       </div>
-                      <Link href={item.href} className="mt-6 block font-semibold text-gray-900">
-                        {item.name}
-                        <span className="absolute inset-0" />
-                      </Link>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
+                      <div>
+                        <div className="font-bold text-daintree-500">Humble Studios</div>
+                        <div>Brunswick West, VIC Australia 3055</div>
+                      </div>
                     </div>
-                  ))}
-                </div>
-                <div className="bg-gray-50">
-                  <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="grid grid-cols-2 divide-x divide-gray-900/5 border-x border-gray-900/5">
-                      {callsToAction.map((item) => (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                          className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-                        >
-                          <item.icon aria-hidden="true" className="size-5 flex-none text-gray-400" />
-                          {item.name}
-                        </Link>
-                      ))}
+                    <div className="flex items-center gap-2">
+                      <div className="inline-flex rounded">
+                        <span className="material-symbols-outlined icon-medium text-driftwood-500">send</span>
+                      </div>
+                      <a href="mailto:hello@humventures.com.au" className="text-daintree-500 hover:text-daintree-600">
+                        hello@humventures.com.au
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="inline-flex rounded">
+                        <span className="material-symbols-outlined icon-medium text-driftwood-500">mobile</span>
+                      </div>
+                      <a href="tel:+61418690519" className="text-daintree-500 hover:text-daintree-600">
+                        +61 418 690 519
+                      </a>
                     </div>
                   </div>
                 </div>

@@ -1,3 +1,4 @@
+import CallToAction from '@/components/CallToAction'
 import Navigation from '@/components/Navigation'
 import {
   Accordion,
@@ -112,7 +113,7 @@ export default function RapidExperimentation() {
                   <li className="flex gap-x-3">
                     <span className="material-symbols-outlined icon-large text-driftwood-500 mt-1">science</span>
                     <span>
-                      <strong className="font-semibold text-driftwood-500">De-risk Your Assumptions.</strong> Turn business assumptions 
+                      <strong className="font-bold text-driftwood-500">De-risk Your Assumptions.</strong> Turn business assumptions 
                       into testable hypotheses. We help you identify the risky assumptions and design cheap, fast experiments 
                       that deliver validated learning at the speed of decision making.
                     </span>
@@ -120,50 +121,37 @@ export default function RapidExperimentation() {
                   <li className="flex gap-x-3">
                     <span className="material-symbols-outlined icon-large text-driftwood-500 mt-1">speed</span>
                     <span>
-                      <strong className="font-semibold text-driftwood-500">Fast Learning Cycles.</strong> When speed matters, get meaningful 
+                      <strong className="font-bold text-driftwood-500">Fast Learning Cycles.</strong> When speed matters, get meaningful 
                       data in days, not months. Learn what customers actually want, and measure behaviour before betting on gut feels alone.
                     </span>
                   </li>
                   <li className="flex gap-x-3">
                     <span className="material-symbols-outlined icon-large text-driftwood-500 mt-1">analytics</span>
                     <span>
-                      <strong className="font-semibold text-driftwood-500">Data-informed Decisions.</strong> Move beyond opinions and intuition. 
+                      <strong className="font-bold text-driftwood-500">Data-informed Decisions.</strong> Move beyond opinions and intuition. 
                       The right experiments generate clear, actionable insights for decisions you need to make.
                     </span>
                   </li>
                 </ul>
-                
+                <h2 className="mt-16 text-2xl font-display font-bold tracking-tight text-daintree-500">From Action to Outcome</h2>
                 <p className="mt-8">
                   Every experiment produces actionable insights that inform your next move. We help you interpret results, 
                   iterate on successful experiments, and kill ideas that don&apos;t work—fast. The goal is validated learning 
                   that de-risks your growth investments.
                 </p>
-                                
-                <div className="mt-12 p-6 bg-gray-50 rounded-lg">
-                  <h3 className="text-lg font-display font-semibold text-daintree-500 mb-3">Ready to experiment?</h3>
-                  <p className="text-gray-600 mb-4">
-                    Start with our rapid &quot;The Spark&quot; to identify your riskiest assumptions, then design experiments 
-                    to validate them quickly.
-                  </p>
-                  <div className="flex gap-4">
-                    <a
-                      href="/contact"
-                      className="rounded-md bg-mulberry-500 px-4 py-2 text-sm font-semibold text-white hover:bg-mulberry-400"
-                    >
-                      Start Experimenting
-                    </a>
-                    <a
-                      href="/results"
-                      className="rounded-md bg-daintree-500 px-4 py-2 text-sm font-semibold text-white hover:bg-daintree-400"
-                    >
-                      See Results
-                    </a>
-                  </div>
-                </div>
+                <div className="mt-10 flex items-right justify-right gap-x-6">
+                  <a
+                    href="/services/product-advisory"
+                    className="rounded-md bg-mulberry-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-mulberry-400"
+                  >
+                    Go Product Advisory<span aria-hidden="true">→</span>
+                  </a>
+                </div>        
               </div>
             </div>
           </div>
         </div>
+        <CallToAction /> 
       </div>
     </div>
   )

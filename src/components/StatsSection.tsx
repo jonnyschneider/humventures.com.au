@@ -20,7 +20,7 @@ export default function StatsSection({
 }: StatsSectionProps) {
   const isDark = variant === 'dark'
   const titleColor = isDark ? 'text-white' : 'text-gray-900'
-  const subtitleColor = isDark ? 'text-gray-300' : 'text-gray-600'
+  const subtitleColor = isDark ? 'text-gray-100' : 'text-gray-600'
   const cardBg = isDark ? 'bg-white/10 backdrop-blur' : 'bg-gray-50'
   const cardTextColor = isDark ? 'text-white' : 'text-gray-900'
   const cardDescColor = isDark ? 'text-white' : 'text-gray-600'

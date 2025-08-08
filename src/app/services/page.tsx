@@ -13,7 +13,7 @@ export default function Services() {
               <p className="mt-2 text-4xl font-display font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
                 Everything you need to move from strategy to execution
               </p>
-              <p className="mt-6 text-lg/8 text-daintree-50">
+              <p className="mt-6 text-lg/8 text-gray-100">
                 Strategy facilitation, rapid experimentation, and product diligence for growth-stage SaaS teams.
                 Each service designed to drive immediate value and confident action.
               </p>
@@ -25,7 +25,7 @@ export default function Services() {
                     <span className="material-symbols-outlined icon-large text-driftwood-500" aria-hidden="true">delivery_truck_speed</span>
                     Strategy that delivers
                   </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-daintree-50">
+                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-100">
                     <p className="flex-auto">
                       Turn strategic thinking into confident action through our Four Moves framework:
                       Strategic Diagnosis, Direction Setting, Implementation Design, and Go & See.
@@ -42,7 +42,7 @@ export default function Services() {
                     <span className="material-symbols-outlined icon-large text-driftwood-500" aria-hidden="true">science</span>
                     Rapid Experimentation
                   </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-daintree-50">
+                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-100">
                     <p className="flex-auto">
                       Customer-led validation through fast learning cycles. 10+ years of proven framework
                       to design experiments, get data fast, and validate assumptions before big investments.
@@ -59,7 +59,7 @@ export default function Services() {
                     <span className="material-symbols-outlined icon-large text-driftwood-500" aria-hidden="true">assessment</span>
                     Product Diligence
                   </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-daintree-50">
+                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-100">
                     <p className="flex-auto">
                       Expert evaluation for investment decisions across four dimensions: Commercial viability,
                       Customer Value, Technical Potential, and Team Capability assessment.

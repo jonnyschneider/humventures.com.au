@@ -32,14 +32,8 @@ export default function Home() {
                 then partner with them to execute what matters most.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Link
-                  href="/contact"
-                  className="rounded-md bg-mulberry-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-mulberry-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                >
-                  Start with The Spark
-                </Link>
-                <Link href="/how-we-work-v3" className="text-sm/6 font-semibold text-white">
-                  How we work <span aria-hidden="true">→</span>
+                <Link href="#services" className="text-sm/6 font-semibold text-white">
+                  Core Services <span aria-hidden="true">→</span>
                 </Link>
               </div>
             </div>
@@ -61,11 +55,11 @@ export default function Home() {
       <div className="bg-daintree-700 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base/7 font-semibold text-driftwood-500">Core Services</h2>
+              <h2 id="services" className="text-base/7 font-semibold text-driftwood-500">Core Services</h2>
               <p className="mt-2 text-4xl font-display font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
                 Everything you need to move from strategy to execution
               </p>
-              <p className="mt-6 text-lg/8 text-daintree-50">
+              <p className="mt-6 text-lg/8 text-gray-100">
                 Strategy facilitation, rapid experimentation, and product diligence for growth-stage SaaS teams.
                 Each service designed to drive immediate value and confident action.
               </p>
@@ -77,7 +71,7 @@ export default function Home() {
                     <span className="material-symbols-outlined icon-large text-driftwood-500" aria-hidden="true">delivery_truck_speed</span>
                     Strategy that delivers
                   </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-white">
+                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-100">
                     <p className="flex-auto">
                       Turn strategic thinking into confident action through our Four Moves framework:
                       Strategic Diagnosis, Direction Setting, Implementation Design, and Go & See.
@@ -94,14 +88,14 @@ export default function Home() {
                     <span className="material-symbols-outlined icon-large text-driftwood-500" aria-hidden="true">science</span>
                     Rapid Experimentation
                   </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-white">
+                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-100">
                     <p className="flex-auto">
                       Customer-led validation through fast learning cycles. 10+ years of proven framework
                       to design experiments, get data fast, and validate assumptions before big investments.
                     </p>
                     <p className="mt-6">
                       <a href="/services/rapid-experimentation" className="text-sm/6 font-semibold text-driftwood-500 hover:text-driftwood-400">
-                        See results <span aria-hidden="true">→</span>
+                        Learn more <span aria-hidden="true">→</span>
                       </a>
                     </p>
                   </dd>
@@ -111,7 +105,7 @@ export default function Home() {
                     <span className="material-symbols-outlined icon-large text-driftwood-500" aria-hidden="true">assessment</span>
                     Product Diligence
                   </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-white">
+                  <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-100">
                     <p className="flex-auto">
                       Expert evaluation for investment decisions across four dimensions: Commercial viability,
                       Customer Value, Technical Potential, and Team Capability assessment.

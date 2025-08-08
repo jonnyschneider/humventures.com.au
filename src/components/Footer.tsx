@@ -1,26 +1,22 @@
 const navigation = {
   solutions: [
-    { name: 'Strategic Clarity', href: '#' },
-    { name: 'Rapid Experimentation', href: '#' },
-    { name: 'Product Diligence', href: '#' },
-    { name: 'Interim Product Leadership', href: '#' },
-    { name: 'The Spark', href: '#' },
-  ],
-  support: [
-    { name: 'Submit ticket', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
+    { name: 'Strategic Clarity', href: '/services/strategy-that-delivers' },
+    { name: 'Rapid Experimentation', href: '/services/rapid-experimentation' },
+    { name: 'Product Diligence', href: '/services/product-advisory#diligence' },
+    { name: 'Interim Product Leadership', href: '/services/product-advisory#fractional' },
+    { name: 'The Spark', href: '/services/start-with-the-spark' },
   ],
   company: [
     { name: 'About', href: '/about' },
+    { name: 'How We Work', href: '/how-we-work' },
     { name: 'Services', href: '/services' },
     { name: 'Results', href: '/results' },
     { name: 'Insights', href: '/insights' },
+    { name: 'Privacy Notice', href: '/privacy' },
   ],
-  legal: [
-    { name: 'Terms of service', href: '#' },
-    { name: 'Privacy policy', href: '#' },
-    { name: 'License', href: '#' },
+  ourwork: [
+    { name: 'Clients', href: '/about#clients' },
+    { name: 'Case Studies', href: '/results' },
   ],
 }
 
@@ -44,9 +40,9 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-white">Support</h3>
+                <h3 className="text-sm/6 font-semibold text-white">Our Work</h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
+                  {navigation.ourwork.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm/6 text-daintree-50 hover:text-white">
                         {item.name}
@@ -70,16 +66,6 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-white">Legal</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-sm/6 text-daintree-50 hover:text-white">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           </div>

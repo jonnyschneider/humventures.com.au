@@ -3,7 +3,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: oklch(0.1842 0.0186 201.9248);
+  --foreground: oklch(21% 0.034 264.665);
 }
 
 @theme inline {
@@ -76,4 +76,8 @@ body {
   line-height: 1;
 }
 
+.material-symbols-outlined.icon-medium {
+  font-size: 2rem;
+  line-height: 1;
+}
 

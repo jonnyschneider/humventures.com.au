@@ -235,6 +235,20 @@ export default function Navigation({ variant = 'dark', position = 'absolute' }: 
               </div>
               <div className="py-6">
                 <div className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold ${mobileTextColor} border-t border-white/10 pt-6`}>
+                  Services
+                </div>
+                {servicesOptions.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`-mx-3 block rounded-lg px-3 py-2 text-sm/6 font-semibold ${mobileTextColor} hover:bg-white/5`}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+              <div className="py-6">
+                <div className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold ${mobileTextColor} border-t border-white/10 pt-6`}>
                   Contact Options
                 </div>
                 {contactOptions.map((item) => (

@@ -3,6 +3,7 @@ import { Hanken_Grotesk } from "next/font/google";
 import { Funnel_Display } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Banner from "@/components/Banner";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import MyStatsig from "./my-statsig";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       </head>
       <body className={`${hankenGrotesk.variable} ${funnelDisplay.variable} font-sans antialiased`}>
+        <Banner />
         <main className="min-h-screen">
           {children}
         </main>

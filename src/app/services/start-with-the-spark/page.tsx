@@ -172,7 +172,7 @@ export default function StartWithTheSpark() {
               <div className="mt-10">
                 <a
                   href="mailto:hello@humventures.com.au"
-                  className="inline-flex items-center rounded-md bg-mulberry-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-mulberry-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mulberry-600"
+                  className="inline-flex items-center rounded-md bg-mulberry-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-mulberry-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-mulberry-600"
                 >
                   Get in touch
                 </a>

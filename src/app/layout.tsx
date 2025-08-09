@@ -18,8 +18,8 @@ const funnelDisplay = Funnel_Display({
 });
 
 export const metadata: Metadata = {
-  title: "HumVentures - Empowering Human Potential",
-  description: "Strategic ventures and innovation focused on human potential",
+  title: "Humble",
+  description: "Strategy that ships. Results that stick.",
 };
 
 export default function RootLayout({

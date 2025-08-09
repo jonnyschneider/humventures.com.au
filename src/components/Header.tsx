@@ -17,7 +17,7 @@ const servicesOptions = [
   {
     name: 'Strategic Clarity',
     description: 'Four Moves framework for strategic diagnosis and direction setting',
-    href: '/services/strategic-clarity',
+    href: '/services/strategy-that-delivers',
     icon: EnvelopeIcon,
   },
   {
@@ -29,13 +29,13 @@ const servicesOptions = [
   {
     name: 'Product Diligence',
     description: 'Expert evaluation across commercial, customer, technical and team dimensions',
-    href: '/services/product-diligence',
+    href: '/services/product-advisory#diligence',
     icon: MapPinIcon,
   },
   {
     name: 'Interim Product Leadership',
     description: 'On-demand senior product expertise to bridge capability gaps',
-    href: '/services/interim-leadership',
+    href: '/services/product-advisory#fractional',
     icon: PhoneIcon,
   },
 ]

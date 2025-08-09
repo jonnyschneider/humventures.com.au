@@ -7,7 +7,7 @@ import { EnvelopeIcon, MapPinIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'How We Work', href: '/how-we-work-v3'},
+  { name: 'How We Work', href: '/how-we-work'},
   { name: 'Results', href: '/results' },
   { name: 'Insights', href: '/insights' },
   { name: 'About', href: '/about' },
@@ -17,7 +17,7 @@ const servicesOptions = [
   {
     name: 'Strategic Clarity',
     description: 'Four Moves framework for strategic diagnosis and direction setting',
-    href: '/services/strategic-clarity',
+    href: '/services/strategy-that-delivers',
     icon: EnvelopeIcon,
   },
   {
@@ -40,31 +40,7 @@ const servicesOptions = [
   },
 ]
 
-const contactOptions = [
-  {
-    name: 'Start with The Spark',
-    description: 'Quick strategic assessment and immediate insights',
-    href: '/contact',
-    icon: EnvelopeIcon,
-  },
-  {
-    name: 'Schedule a Call',
-    description: 'Discuss your strategic challenges with our team',
-    href: '/contact?type=call',
-    icon: CalendarIcon,
-  },
-  {
-    name: 'Visit Our Office',
-    description: 'Meet us in person for deeper collaboration',
-    href: '/contact?type=visit',
-    icon: MapPinIcon,
-  },
-]
 
-const callsToAction = [
-  { name: 'Book consultation', href: '/contact', icon: PhoneIcon },
-  { name: 'Send message', href: '/contact?type=message', icon: EnvelopeIcon },
-]
 
 interface NavigationProps {
   variant?: 'light' | 'dark'
@@ -78,17 +54,16 @@ export default function Navigation({ variant = 'dark', position = 'absolute' }: 
   const textColor = isDark ? 'text-white' : 'text-daintree-700'
   const mobileTextColor = isDark ? 'text-white' : 'text-gray-900'
   const mobileBg = isDark ? 'bg-daintree-700' : 'bg-white'
-  const logoColor = isDark ? 'text-white' : 'text-gray-900'
   
   return (
     <header className={`${position === 'absolute' ? 'absolute' : 'relative'} inset-x-0 top-0 z-50`}>
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">HumVentures</span>
+            <span className="sr-only">Humble Ventures</span>
             <img
               src="/images_static/Humble-Gold.svg"
-              alt="HumVentures"
+              alt="Humble Ventures"
               className="h-8 w-auto"
             />
           </Link>
@@ -249,17 +224,29 @@ export default function Navigation({ variant = 'dark', position = 'absolute' }: 
               </div>
               <div className="py-6">
                 <div className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold ${mobileTextColor} border-t border-white/10 pt-6`}>
-                  Contact Options
+                  Contact
                 </div>
-                {contactOptions.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={`-mx-3 block rounded-lg px-3 py-2 text-sm/6 font-semibold ${mobileTextColor} hover:bg-white/5`}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
+                <div className="space-y-4 px-3 py-4">
+                  <div className="flex items-center gap-3">
+                    <span className="material-symbols-outlined icon-medium text-driftwood-500">store</span>
+                    <div>
+                      <div className={`font-bold ${mobileTextColor}`}>Humble Studios</div>
+                      <div className={`text-sm ${mobileTextColor} opacity-75`}>Brunswick West, VIC Australia 3055</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="material-symbols-outlined icon-medium text-driftwood-500">send</span>
+                    <a href="mailto:hello@humventures.com.au" className={`${mobileTextColor} hover:text-driftwood-500`}>
+                      hello@humventures.com.au
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="material-symbols-outlined icon-medium text-driftwood-500">mobile</span>
+                    <a href="tel:+61418690519" className={`${mobileTextColor} hover:text-driftwood-500`}>
+                      +61 418 690 519
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

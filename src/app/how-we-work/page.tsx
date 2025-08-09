@@ -1,187 +1,250 @@
+import CallToAction from '@/components/CallToAction'
 import Navigation from '@/components/Navigation'
 
-export default function HowWeWork() {
+export default function HowWeWorkV3() {
   return (
-    <div>
-      <Navigation variant="light" position="relative" />
-      <div className="py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h1 className="text-4xl font-display font-semibold tracking-tight text-gray-900 sm:text-6xl">
-            How We Work
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Two proven pathways from strategic clarity to execution results.
+    <div className="bg-daintree-700 text-neutral-950 text-med">
+      <Navigation variant="dark" position="relative" />
+      
+      <div className="bg-daintree-700 py-24 sm:py-32">
+        <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+          <h2 className="text-center text-med font-semibold text-white">How we work</h2>
+          <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-display font-semibold tracking-tight text-balance text-white sm:text-5xl">
+            Thinkers who build. Builders who think.
           </p>
-        </div>
-
-        {/* The Spark Introduction */}
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20">
-          <div className="text-center">
-            <h2 className="text-3xl font-display font-semibold tracking-tight text-gray-900">
-              Start with &quot;The Spark&quot;
-            </h2>
-            <p className="mt-4 text-lg leading-8 text-gray-600">
-              Every engagement begins with our rapid expert evaluation - half a day of focused analysis 
-              that reveals strategic blind spots and confirms your instincts.
-            </p>
-            <div className="mt-8 p-6 bg-gray-50 rounded-lg">
-              <div className="grid grid-cols-2 gap-4 text-center">
-                <div>
-                  <div className="text-2xl font-display font-bold text-gray-900">$4,950</div>
-                  <div className="text-sm text-gray-600">Perceived Value</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-display font-bold text-green-600">&lt;$1,000</div>
-                  <div className="text-sm text-gray-600">Your Investment</div>
-                </div>
-              </div>
-              <div className="mt-4 text-sm text-gray-600">
-                Expert evaluation + leadership interviews + strategic insights write-up + prioritized focus areas
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Service Flows */}
-        <div className="mx-auto mt-20 max-w-6xl">
-          <h2 className="text-center text-3xl font-display font-semibold tracking-tight text-gray-900 mb-16">
-            Two Service Flows
-          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-center text-xl text-white">
+            Strategy that ships. Results that stick.
+          </p>
           
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Flow 1: Growth-Stage SaaS */}
-            <div className="relative">
-              <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-display font-semibold text-gray-900 mb-4">
-                  Growth-Stage SaaS Teams
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  For leadership teams scaling from ~120+ employees, $5-35M ARR, 
-                  facing the &quot;tipping point&quot; where existing approaches aren&apos;t scaling.
-                </p>
-                
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                      <span className="text-sm font-semibold text-blue-600">1</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">&quot;The Spark&quot;</h4>
-                      <p className="text-sm text-gray-600">Rapid expert evaluation of strategic challenges</p>
-                    </div>
+          <div className="mt-10 grid gap-4 sm:mt-16 grid-cols-1 lg:grid-cols-3">
+            
+            {/* Beyond the playbook - 2 columns */}
+            <div className="relative ">
+              <div className="absolute inset-px rounded border border-white"  />
+              <div className="relative flex h-full flex-col overflow-hidden rounded lg:rounded">
+                <div className="px-8 pt-8 pb-6 sm:px-10 sm:pt-10 sm:pb-8">
+                  <div className="inline-flex rounded mb-6">
+                    <span className="material-symbols-outlined icon-large text-white">fork_left</span>
                   </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                      <span className="text-sm font-semibold text-blue-600">2</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Strategy Facilitation</h4>
-                      <p className="text-sm text-gray-600">Leadership team alignment and clear direction setting</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                      <span className="text-sm font-semibold text-blue-600">3</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Rapid Experimentation</h4>
-                      <p className="text-sm text-gray-600">Validate strategy through fast customer learning cycles</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                      <span className="text-sm font-semibold text-green-600">4</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Anchor Retainer</h4>
-                      <p className="text-sm text-gray-600">Ongoing partnership or interim CPTO role</p>
-                    </div>
-                  </div>
+                  <p className="text-xl font-display font-semibold tracking-tight text-white mb-3">
+                    Beyond the playbook.
+                  </p>
+                  <p className="text-white leading-relaxed mb-4">
+                    Everyone&apos;s got a playbook. We&apos;ve even written one. But real success starts with first principles—knowing 
+                    when to follow the rules and when to break them.
+                  </p>
                 </div>
               </div>
+              <div className="pointer-events-none absolute inset-px rounded shadow-sm outline outline-white/10 lg:rounded" />
             </div>
 
-            {/* Flow 2: PE-Backed */}
-            <div className="relative">
-              <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-display font-semibold text-gray-900 mb-4">
-                  PE-Backed Companies
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  For private equity firms and portfolio companies needing expert product insights 
-                  that complement traditional technical and commercial diligence.
+            {/* Day one value - Top right */}
+            <div className="relative lg:col-start-3">
+              <div className="absolute inset-px rounded border bg-white"  />
+              <div className="relative flex h-full flex-col overflow-hidden rounded">
+                <div className="px-8 pt-8 pb-6 sm:px-10 sm:pt-10">
+                  <div className="inline-flex rounded mb-6">
+                    <span className="material-symbols-outlined icon-large text-driftwood-500">timer</span>
+                  </div>
+                  <p className="text-xl font-display font-semibold tracking-tight mb-3">
+                    Day one value.
+                  </p>
+                  <p className="leading-relaxed mb-4">
+                    Your challenges don&apos;t wait for lengthy setups and process decks. We cut straight to what matters, 
+                    because we&apos;ve seen enough to know where to start and what works.
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded shadow-sm outline outline-white/10 max-lg:rounded" />
+            </div>
+
+            {/* Small teams, Big Impact - Single column, transparent with gold border */}
+            <div className="relative lg:row-start-2 lg:col-start-3">
+              <div className="absolute inset-px rounded border border-white"  />
+              <div className="relative flex h-full flex-col overflow-hidden rounded">
+                <div className="px-8 pt-8 pb-6 sm:px-10 sm:pt-10">
+                  <div className="inline-flex rounded mb-6">
+                    <span className="material-symbols-outlined icon-large text-white">atr</span>
+                  </div>
+                  <p className="text-xl font-display font-semibold tracking-tight text-white mb-3">
+                    Small teams, Big Impact.
+                  </p>
+                  <p className="text-white text-med mb-4">
+                    No bloat, no armies of juniors. Just a few excellent people who can play across multiple positions.
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded shadow-sm outline outline-driftwood-500/20" />
+            </div>
+
+            {/* Dream team, on demand - Single column */}
+            <div className="relative lg:row-start-3 lg:col-start-2">
+              <div className="absolute inset-px rounded border border-white"  />
+              <div className="relative flex h-full flex-col overflow-hidden rounded">
+                <div className="px-8 pt-8 pb-6 sm:px-10 sm:pt-10 text-white">
+                  <div className="inline-flex rounded mb-6">
+                    <span className="material-symbols-outlined icon-large text-driftwood-500">hotel_class</span>
+                  </div>
+                  <p className="text-xl font-display font-semibold tracking-tight mb-3">
+                    Dream team, on demand.
+                  </p>
+                  <p className="leading-relaxed mb-4">
+                    We don&apos;t hire employees. Instead, we build networks of exceptional talent and trusted partners 
+                    who come together to solve your challenges.
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded shadow-sm outline outline-white/10" />
+            </div>
+            {/* The goldilocks of global teams */}
+            <div className="relative lg:row-start-3">
+              <div className="absolute inset-px rounded border bg-white"  />
+              <div className="relative flex h-full flex-col overflow-hidden rounded">
+                <div className="px-8 pt-8 pb-8 sm:px-10 sm:pt-10 sm:pb-10">
+                  <div className="inline-flex rounded mb-6">
+                    <span className="material-symbols-outlined icon-large text-driftwood-500">skillet</span>
+                  </div>
+                  <p className="text-xl font-display font-semibold tracking-tight mb-3">
+                    The goldilocks of global teams.
+                  </p>
+                  <p className="leading-relaxed mb-4">
+                    Product innovation needs local leadership, but offshore costs. We put senior experts on-site, 
+                    backed by world-class delivery partners in friendly time zones.
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded shadow-sm outline outline-white/10" />
+            </div>
+
+            {/* No lock-in, just results */}
+            <div className="relative lg:row-start-2 lg:col-start-2">
+              <div className="absolute inset-px rounded border bg-white"  />
+              <div className="relative flex h-full flex-col overflow-hidden rounded">
+                <div className="px-8 pt-8 pb-8 sm:px-10 sm:pt-10 sm:pb-10">
+                  <div className="inline-flex rounded mb-6">
+                    <span className="material-symbols-outlined icon-large text-driftwood-500">vpn_key</span>
+                  </div>
+                  <p className="text-xl font-display font-semibold tracking-tight mb-3">
+                    No lock-in, just results.
+                  </p>
+                  <p className="leading-relaxed mb-4">
+                    We earn trust by delivering value fast, with flexible engagement models that fit your operating model.
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded shadow-sm outline outline-white/10" />
+            </div>
+
+            {/* Thinkers who build - Single column */}
+            <div className="relative lg:row-start-4 lg:col-start-3">
+              <div className="absolute inset-px rounded border bg-white"  />
+              <div className="relative flex h-full flex-col overflow-hidden rounded">
+                <div className="px-8 pt-8 pb-6 sm:px-10 sm:pt-10">
+                  <div className="inline-flex rounded mb-6">
+                    <span className="material-symbols-outlined icon-large text-driftwood-500">timer</span>
+                  </div>
+                  <p className="text-xl font-display font-semibold tracking-tight mb-3">
+                    Thinkers who build. Builders who think.
+                  </p>
+                  <p className="leading-relaxed mb-4">
+                    Others stop at the strategy deck. We bring both the vision and the know-how to make it real, adapting as we learn. Because good ideas only matter when they work.
+                  </p>
+                  <p className="leading-relaxed mb-4 font-semibold">
+                    You get the team you need, not whoever&apos;s available.
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded shadow-sm outline outline-white/10" />
+            </div>
+          </div>
+
+          {/* Service Flow Timeline: TailwindPlus UI Block */}
+          <div className="bg-white py-24 sm:py-32 mt-16 rounded">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <div className="mx-auto max-w-2xl text-center mb-16">
+                <h2 className="text-med font-semibold text-driftwood-500">Our Service Flow</h2>
+                <p className="mt-2 text-3xl font-display font-semibold tracking-tight text-daintree-500 sm:text-4xl">
+                  Start small, scale to your need
                 </p>
+                <p className="mt-6 text-lg">
+                  We start with immediate value and small commitments, and offer flexibility for continued partnership
+                </p>
+              </div>
+              
+              <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
+                <div>
+                  <time className="flex items-center text-sm/6 font-semibold text-driftwood-500">
+                    <svg viewBox="0 0 4 4" aria-hidden="true" className="mr-4 size-2 flex-none">
+                      <circle r={2} cx={2} cy={2} fill="currentColor" />
+                    </svg>
+                    DAYS
+                    <div
+                      aria-hidden="true"
+                      className="absolute -ml-2 h-0.5 w-screen -translate-x-full bg-driftwood-500 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                    />
+                  </time>
+                  <p className="mt-6 text-lg/8 font-display font-semibold tracking-tight">Strategic Clarity</p>
+                  <p className="mt-1 text-med">
+                    Rapid &quot;The Spark&quot; and strategy facilitation reveals what matters most. No lengthy discovery - immediate insights and clear direction.
+                  </p>
+                </div>
                 
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                      <span className="text-sm font-semibold text-purple-600">1</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Product Diligence</h4>
-                      <p className="text-sm text-gray-600">Four-lens evaluation of product potential and scaling readiness</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                      <span className="text-sm font-semibold text-purple-600">2</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Post-Deal Strategy</h4>
-                      <p className="text-sm text-gray-600">Leadership facilitation for portfolio company strategic alignment</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                      <span className="text-sm font-semibold text-green-600">3</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Fractional Advisory</h4>
-                      <p className="text-sm text-gray-600">Ongoing retainer for operating model and growth initiatives</p>
-                    </div>
-                  </div>
+                <div>
+                  <time className="flex items-center text-sm/6 font-semibold text-driftwood-500">
+                    <svg viewBox="0 0 4 4" aria-hidden="true" className="mr-4 size-2 flex-none">
+                      <circle r={2} cx={2} cy={2} fill="currentColor" />
+                    </svg>
+                    WEEKS
+                    <div
+                      aria-hidden="true"
+                      className="absolute -ml-2 h-0.5 w-screen -translate-x-full bg-driftwood-500 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                    />
+                  </time>
+                  <p className="mt-6 text-lg/8 font-display font-semibold tracking-tight text-gray-900">Rapid Experimentation</p>
+                  <p className="mt-1 text-med">
+                    Fast learning cycles through customer validation. Design cheap tests, get real data, validate assumptions before big investments.
+                  </p>
+                </div>
+                
+                <div>
+                  <time className="flex items-center text-sm/6 font-semibold text-driftwood-500">
+                    <svg viewBox="0 0 4 4" aria-hidden="true" className="mr-4 size-2 flex-none">
+                      <circle r={2} cx={2} cy={2} fill="currentColor" />
+                    </svg>
+                    MONTHS
+                    <div
+                      aria-hidden="true"
+                      className="absolute -ml-2 h-0.5 w-screen -translate-x-full bg-driftwood-500 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                    />
+                  </time>
+                  <p className="mt-6 text-lg/8 font-display font-semibold tracking-tight text-gray-900">Execution Support</p>
+                  <p className="mt-1 text-med">
+                    Hands-on implementation with your team. Bridge strategy to execution, build internal capability, and ensure momentum continues.
+                  </p>
+                </div>
+                
+                <div>
+                  <time className="flex items-center text-sm/6 font-semibold text-driftwood-500">
+                    <svg viewBox="0 0 4 4" aria-hidden="true" className="mr-4 size-2 flex-none">
+                      <circle r={2} cx={2} cy={2} fill="currentColor" />
+                    </svg>
+                    ONGOING
+                    <div
+                      aria-hidden="true"
+                      className="absolute -ml-2 h-0.5 w-screen -translate-x-full bg-driftwood-500 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                    />
+                  </time>
+                  <p className="mt-6 text-lg/8 font-display font-semibold tracking-tight text-gray-900">Advisory Partnership</p>
+                  <p className="mt-1 text-med">
+                    Fractional advisory role for strategic guidance. No lock-in contracts - flexible support as challenges evolve and teams grow.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Common Pattern Recognition */}
-        <div className="mx-auto mt-20 max-w-4xl">
-          <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-xl font-display font-semibold text-gray-900 mb-4 text-center">
-              The Most Common Pattern We See
-            </h3>
-            <blockquote className="text-lg italic text-gray-700 text-center">
-              &quot;You left the strategy offsite believing it was crystal clear and you&apos;re all on the same page. 
-              By half-quarter, product, sales, and marketing all believe they&apos;re talking about the same thing, 
-              but in fact sales is promising things that don&apos;t exist and aren&apos;t on the roadmap, Product is 
-              obsessed about a detail that doesn&apos;t matter at this scale, and go to market teams are confused 
-              about how to communicate the mess.&quot;
-            </blockquote>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mx-auto mt-16 max-w-2xl text-center">
-          <a
-            href="/contact"
-            className="rounded-md bg-gray-900 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-          >
-            Start with The Spark
-          </a>
-          <p className="mt-4 text-sm text-gray-600">
-            Half a day of expert analysis. Less than $1,000. Strategic insights that matter.
-          </p>
+          <CallToAction />
         </div>
       </div>
     </div>
-    </div>
-  );
+  )
 }

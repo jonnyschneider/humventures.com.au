@@ -4,6 +4,7 @@ import { Funnel_Display } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import MyStatsig from "./my-statsig";
 
 const hankenGrotesk = Hanken_Grotesk({
   weight: ['300', '400', '500', '600', '700'],
@@ -38,7 +39,9 @@ export default function RootLayout({
         </main>
         <Footer />
         <SpeedInsights />
+        <MyStatsig>{children}</MyStatsig>
       </body>
     </html>
   );
 }
+

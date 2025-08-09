@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import { Funnel_Display } from "next/font/google";
 import "./globals.css";
-//import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const hankenGrotesk = Hanken_Grotesk({
   weight: ['300', '400', '500', '600', '700'],
@@ -37,6 +37,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );

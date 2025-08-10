@@ -67,16 +67,21 @@ Rebuilding business website from Webflow to Next.js + Tailwind stack for improve
 
 ### Phase 7: Email & Notifications Setup
 - [x] Slack webhook notifications (immediate solution)
-- [ ] **Email service setup (Resend/SendGrid)**
+- [x] MailerLite newsletter integration with inline status handling
+- [ ] **Email service setup for Spark form (Resend/SendGrid)**
   - [ ] Choose email provider (Resend recommended)
   - [ ] Configure API keys and environment variables
-  - [ ] Implement user acknowledgment emails
+  - [ ] Implement user acknowledgment emails for Spark form
   - [ ] Setup spark@humventures.com.au forwarding/CC
   - [ ] Configure SPF/DKIM records for deliverability
   - [ ] Add rate limiting and spam prevention
   - [ ] Test email delivery and spam folder placement
+- [x] **CTA optimization**
+  - [x] Hero section CTA prioritization (Spark form primary)
+  - [x] Google Calendar booking integration
+  - [x] Visual hierarchy improvements (button vs text link)
 - [ ] **Form enhancements**
-  - [ ] Add email validation and confirmation
+  - [ ] Add email validation and confirmation to Spark form
   - [ ] Implement form analytics tracking
   - [ ] A/B testing different form versions
 
@@ -95,6 +100,9 @@ Rebuilding business website from Webflow to Next.js + Tailwind stack for improve
 - **Mobile Optimizations**: Fixed banner/navigation overlap issues on mobile devices
 - **Horizontal Scroll Fix**: Resolved overflow issues on start-with-the-spark page
 - **Statsig Integration**: Analytics and A/B testing framework implemented
+- **Google Calendar Booking**: Direct integration with appointment slots
+- **MailerLite Newsletter**: Footer subscription form with inline status handling
+- **Hero CTA Optimization**: Prioritized Spark Readiness Check with secondary booking link
 
 ### Form Features Implemented:
 - Progressive disclosure (one question at a time)
@@ -104,6 +112,8 @@ Rebuilding business website from Webflow to Next.js + Tailwind stack for improve
 - Responsive design for all devices
 - Slack webhook integration for immediate notifications
 - Tailored follow-up messages based on responses
+- Google Calendar appointment booking integration
+- MailerLite email subscription with success/error states
 
 **Deployment URLs:**
 - GitHub: https://github.com/jonnyschneider/humventures.com.au

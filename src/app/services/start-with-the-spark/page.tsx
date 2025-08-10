@@ -79,7 +79,7 @@ export default function StartWithTheSpark() {
                   rel="noopener noreferrer"
                   className="text-base text-gray-600 hover:text-gray-900 transition-colors"
                 >
-                  Skip to booking <span aria-hidden="true">→</span>
+                  Rather chat? Book a time <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
@@ -189,6 +189,14 @@ export default function StartWithTheSpark() {
                 <p className="mt-6 text-lg/8 text-daintree-700">
                   Take our quick readiness check to see if <span className="font-display font-bold tracking-tight">The Spark</span><span className="material-symbols-outlined text-driftwood-500 text-xl align-super" aria-hidden="true">bolt</span> is right for your situation.
                 </p>
+                <a
+                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ36BX5IqJI1GHCHA91HLNRW0FeWWK6x_Vp26fSW-csP1p76yv5CikqrTIPJRC6BRsbnn2NmIiqG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-mulberry-500 hover:text-mulberry-600 transition-colors"
+                >
+                  Rather chat? Book a time <span aria-hidden="true">→</span>
+                </a>
               </div>
               
               {/* Spark Readiness Form */}

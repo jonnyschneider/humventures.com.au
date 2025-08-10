@@ -35,13 +35,14 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       </head>
       <body className={`${hankenGrotesk.variable} ${funnelDisplay.variable} font-sans antialiased`}>
-        <Banner />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+        <MyStatsig>
+          <Banner />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </MyStatsig>
         <SpeedInsights />
-        <MyStatsig>{children}</MyStatsig>
       </body>
     </html>
   );

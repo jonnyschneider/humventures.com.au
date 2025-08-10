@@ -1,5 +1,7 @@
+'use client'
+
 import Navigation from '@/components/Navigation'
-import StatsSection from '@/components/StatsSection'
+import SparkReadinessForm from '@/components/SparkReadinessForm'
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
@@ -62,7 +64,24 @@ export default function StartWithTheSpark() {
                 Most consulting starts with lengthy discovery phases, endless PowerPoints, and teams that take weeks to understand what you already know about your business. We think that's backwards.
               </p>
               <p className="mt-6 text-lg/8 text-gray-700">Our answer is <span className="font-display font-bold tracking-tight">The Spark</span><span className="material-symbols-outlined text-driftwood-500 text-xl align-super" aria-hidden="true">bolt</span><br /> It's how we shortcut to value in days not months.</p>
-            
+              
+              {/* Hero CTAs */}
+              <div className="mt-10 flex flex-col gap-4 items-center">
+                <button
+                  onClick={() => document.getElementById('readiness-check')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="inline-flex items-center rounded-md bg-mulberry-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-mulberry-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-mulberry-600"
+                >
+                  Take the 2 min Spark Ready Check
+                </button>
+                <a
+                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ36BX5IqJI1GHCHA91HLNRW0FeWWK6x_Vp26fSW-csP1p76yv5CikqrTIPJRC6BRsbnn2NmIiqG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Skip to booking <span aria-hidden="true">→</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -79,7 +98,7 @@ export default function StartWithTheSpark() {
                 In a day, half-day, or short sprint, we go from first conversation to tangible progress on what matters most.
               </p>
             </div>
-            <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base/7 text-gray-200 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-16">
+            <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base/7 text-gray-200 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8">
               {sparkFeatures.map((feature) => (
                 <div key={feature.name} className="relative pl-9">
                   <dt className="inline font-semibold text-white">
@@ -90,7 +109,7 @@ export default function StartWithTheSpark() {
                 </div>
               ))}
             </dl>
-            <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base/7 text-gray-200 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-16">
+            <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base/7 text-gray-200 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8">
               {howItWorksFeatures.map((feature) => (
                 <div key={feature.name} className="relative pl-9">
                   <dt className="inline font-semibold text-white">
@@ -109,7 +128,7 @@ export default function StartWithTheSpark() {
         <div className="mx-auto mt-16 max-w-4xl text-center">
           <svg
             aria-hidden="true"
-            className="absolute left-1/2 -top-[40rem] -z-10 h-[64rem] w-[175.5rem] -translate-x-1/2 stroke-gray-900/10 [mask:radial-gradient(64rem_64rem_at_50%_0%,white,transparent)]"
+            className="absolute left-1/2 -top-[40rem] -z-10 h-[64rem] w-[100vw] max-w-[1400px] -translate-x-1/2 stroke-gray-900/10 [mask:radial-gradient(64rem_64rem_at_50%_0%,white,transparent)]"
           >
             <defs>
               <pattern
@@ -161,21 +180,20 @@ export default function StartWithTheSpark() {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="py-14 sm:py-18">
+        {/* Readiness Check Section */}
+        <div id="readiness-check" className="py-14 sm:py-18">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-display font-semibold text-daintree-900 sm:text-4xl">Ready to skip the dance?</h2>
-              <p className="mt-6 text-lg/8 text-daintree-700">
-                Get in touch to discuss your challenge and whether <span className="font-display font-bold tracking-tight">The Spark</span><span className="material-symbols-outlined text-driftwood-500 text-xl align-super" aria-hidden="true">bolt</span> makes sense for where you are.
-              </p>
-              <div className="mt-10">
-                <a
-                  href="mailto:hello@humventures.com.au"
-                  className="inline-flex items-center rounded-md bg-mulberry-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-mulberry-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-mulberry-600"
-                >
-                  Get in touch
-                </a>
+            <div className="mx-auto max-w-4xl">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-display font-semibold text-daintree-900 sm:text-4xl">Ready to skip the dance?</h2>
+                <p className="mt-6 text-lg/8 text-daintree-700">
+                  Take our quick readiness check to see if <span className="font-display font-bold tracking-tight">The Spark</span><span className="material-symbols-outlined text-driftwood-500 text-xl align-super" aria-hidden="true">bolt</span> is right for your situation.
+                </p>
+              </div>
+              
+              {/* Spark Readiness Form */}
+              <div>
+                <SparkReadinessForm />
               </div>
             </div>
           </div>

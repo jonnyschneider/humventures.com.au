@@ -56,7 +56,7 @@ export default function Navigation({ variant = 'dark', position = 'absolute' }: 
   const mobileBg = isDark ? 'bg-daintree-700' : 'bg-white'
   
   return (
-    <header className={`${position === 'absolute' ? 'absolute' : 'relative'} inset-x-0 ${position === 'absolute' ? 'top-[44px]' : 'top-0'} z-50`}>
+    <header className={`${position === 'absolute' ? 'absolute' : 'relative'} inset-x-0 ${position === 'absolute' ? 'top-[60px] sm:top-[44px]' : 'top-0'} z-50`}>
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">

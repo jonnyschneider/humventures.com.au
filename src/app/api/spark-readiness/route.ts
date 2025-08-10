@@ -75,24 +75,31 @@ Submitted: ${new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney' }
               type: "section",
               text: {
                 type: "mrkdwn",
-                text: `*Situation(s):*\n${Array.isArray(formData.situation) ? formData.situation.map(s => `• ${s}`).join('\n') : formData.situation}`
+                text: `*Situation(s):*\n${Array.isArray(formData.situation) ? formData.situation.map((s: string) => `• ${s}`).join('\n') : formData.situation}`
               }
             },
             {
               type: "section", 
               text: {
                 type: "mrkdwn",
-                text: `*Challenge(s):*\n${Array.isArray(formData.challenge) ? formData.challenge.map(c => `• ${c}`).join('\n') : formData.challenge}`
+                text: `*Challenge(s):*\n${Array.isArray(formData.challenge) ? formData.challenge.map((c: string) => `• ${c}`).join('\n') : formData.challenge}`
               }
             },
             {
               type: "section",
               text: {
                 type: "mrkdwn", 
-                text: `*Timeline Driver(s):*\n${Array.isArray(formData.timeline) ? formData.timeline.map(t => `• ${t}`).join('\n') : formData.timeline}`
+                text: `*Timeline Driver(s):*\n${Array.isArray(formData.timeline) ? formData.timeline.map((t: string) => `• ${t}`).join('\n') : formData.timeline}`
+              }
+            },
+            {
+              type: "section",
+              text: {
+                type: "mrkdwn",
+                text: `Submitted: ${new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney' })}`
               }
             }
-          ]
+          ] as any[]
         }
 
         if (formData.additionalInfo) {
@@ -104,16 +111,6 @@ Submitted: ${new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney' }
             }
           })
         }
-
-        slackMessage.blocks.push({
-          type: "context",
-          elements: [
-            {
-              type: "mrkdwn",
-              text: `Submitted: ${new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney' })}`
-            }
-          ]
-        })
 
         await fetch(process.env.SLACK_WEBHOOK_URL, {
           method: 'POST',
@@ -183,32 +180,39 @@ Submitted: ${new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney' }
   }
 }
 
-function getFollowUpMessage(formData: any): string {
+function getFollowUpMessage(formData: {
+  situation: string | string[]
+  challenge: string | string[]
+  timeline: string | string[]
+  role: string
+}): string {
   // Tailored follow-up based on responses
   const { situation, challenge, timeline, role } = formData
   
   // Strategic decision scenarios
-  if (situation.includes('strategic decision')) {
+  const situationStr = Array.isArray(situation) ? situation.join(' ') : situation
+  if (situationStr.includes('strategic decision')) {
     return "Given you're facing a major strategic decision, we'll prioritize connecting you with our team within 24 hours to discuss how The Spark can help you navigate this critical choice."
   }
   
   // Scaling challenges
-  if (situation.includes('scaling successfully')) {
+  if (situationStr.includes('scaling successfully')) {
     return "Scaling challenges require experienced guidance. We'll reach out within 24 hours to explore how our rapid experimentation approach can help you solve these new problems efficiently."
   }
   
   // Leadership needs
-  if (situation.includes('leadership')) {
+  if (situationStr.includes('leadership')) {
     return "Interim leadership needs are time-sensitive. We'll connect you with our product leadership team within 24 hours to discuss immediate next steps."
   }
   
   // Alignment issues
-  if (situation.includes('aligned')) {
+  if (situationStr.includes('aligned')) {
     return "Leadership alignment is crucial for execution. We'll contact you within 24 hours to explore how our strategic clarity framework can help get everyone on the same page."
   }
   
   // Timeline-driven responses
-  if (timeline.includes('Investment') || timeline.includes('M&A')) {
+  const timelineStr = Array.isArray(timeline) ? timeline.join(' ') : timeline
+  if (timelineStr.includes('Investment') || timelineStr.includes('M&A')) {
     return "Given your timeline constraints, we'll prioritize this and reach out within 12 hours to discuss how we can support you through this critical period."
   }
   

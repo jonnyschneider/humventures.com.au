@@ -16,7 +16,7 @@ export default function Banner() {
           <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline size-1 fill-current">
             <circle r={1} cx={1} cy={1} />
           </svg>
-            Join our November Workshop with Martin Erikkson in Sydney, Melbourne, or UK. Limited Early Bird Tix Selling Fast&nbsp;<span aria-hidden="true">&rarr;</span>
+            Join a November Workshop with Martin Erikkson in Sydney, Melbourne, or UK.&nbsp;<span aria-hidden="true">&rarr;</span>
         </a>
       </p>
       <div className="absolute right-6 sm:right-3.5">

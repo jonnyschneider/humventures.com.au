@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   description: 'Strategic insights, product development wisdom, and lessons from the field.',
 }
 
+export const revalidate = 0
+
 const postsPerPage = 5
 
 async function FeaturedPosts() {

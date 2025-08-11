@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useStatsigClient } from '@statsig/react-bindings'
 
 const navigation = {
   solutions: [
@@ -28,6 +29,7 @@ export default function Footer() {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [message, setMessage] = useState('')
+  const { client } = useStatsigClient()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -46,6 +48,10 @@ export default function Footer() {
       // Since we can't read the response due to CORS, assume success
       setStatus('success')
       setMessage('Thanks for subscribing! Check your email to confirm.')
+      
+      // Simple newsletter tracking
+      client.logEvent('newsletter_signup', email.split('@')[1] || 'unknown')
+      
       setEmail('')
     } catch (error) {
       setStatus('error')

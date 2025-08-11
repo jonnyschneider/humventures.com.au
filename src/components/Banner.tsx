@@ -2,16 +2,23 @@
 
 import { useState } from 'react'
 import { XMarkIcon } from '@heroicons/react/20/solid'
+import { useStatsigClient } from '@statsig/react-bindings'
 
 export default function Banner() {
   const [isVisible, setIsVisible] = useState(true)
+  const { client } = useStatsigClient()
 
   if (!isVisible) return null
 
   return (
     <div className="relative flex items-center justify-center gap-x-6 bg-mulberry-500 px-6 py-2.5 sm:px-3.5">
       <p className="text-sm/6 text-white text-center">
-        <a href="https://www.thedecisionstack.com/workshops/">
+        <a 
+          href="https://www.thedecisionstack.com/workshops/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          onClick={() => client.logEvent('banner_click', 'workshop')}
+        >
           <strong className="font-semibold">Strategy That Works</strong>
           <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline size-1 fill-current">
             <circle r={1} cx={1} cy={1} />

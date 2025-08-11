@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { ChevronLeftIcon, ChevronRightIcon, CheckIcon } from '@heroicons/react/24/outline'
+import { useStatsigClient } from '@statsig/react-bindings'
 
 interface FormData {
   situation: string[]
@@ -44,6 +45,7 @@ export default function SparkReadinessForm() {
   const [currentStep, setCurrentStep] = useState(0)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const { client } = useStatsigClient()
   const [formData, setFormData] = useState<FormData>({
     situation: [],
     challenge: [],
@@ -120,6 +122,9 @@ export default function SparkReadinessForm() {
       })
 
       if (response.ok) {
+        // Simple event tracking - no complex data
+        client.logEvent('spark_form_completed', formData.role)
+        
         setIsSubmitted(true)
       } else {
         throw new Error('Submission failed')

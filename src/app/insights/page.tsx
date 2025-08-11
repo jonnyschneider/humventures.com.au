@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'Strategic insights, product development wisdom, and lessons from the field.',
 }
 
-export const revalidate = 0
+export const revalidate = 900 // 15 minutes
 
 const postsPerPage = 5
 

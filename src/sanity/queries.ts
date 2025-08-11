@@ -43,7 +43,6 @@ export async function getPosts(
       endIndex,
       category: category ?? null,
     },
-    stega: false,
   })
 }
 
@@ -67,7 +66,6 @@ export async function getFeaturedPosts(quantity: number) {
   return await sanityFetch({
     query: FEATURED_POSTS_QUERY,
     params: { quantity },
-    stega: false,
   })
 }
 

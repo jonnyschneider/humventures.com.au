@@ -28,9 +28,9 @@ async function FeaturedPosts() {
   }
 
   return (
-    <div className="mt-16 bg-gray-50 py-14">
+    <div className="mt-16 bg-white lg:bg-driftwood-500 py-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-2xl font-display font-medium tracking-tight text-daintree-500">Featured</h2>
+        <h2 className="text-2xl font-display font-medium tracking-tight text-daintree-500 lg:text-white">Featured</h2>
         <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-3">
           {featuredPosts.map((post: any) => (
             <div
@@ -45,16 +45,16 @@ async function FeaturedPosts() {
                 />
               )}
               <div className="flex flex-1 flex-col p-8">
-                <div className="text-sm/5 text-gray-700">
-                  {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}
+                <div className="text-base/6 text-gray-700">
+                  {dayjs(post.publishedAt).format('D MMM YYYY')}
                 </div>
-                <div className="mt-2 text-base/7 font-medium">
+                <div className="mt-2 text-2xl/8 font-medium">
                   <Link href={`/insights/${post.slug}`}>
                     <span className="absolute inset-0" />
                     {post.title}
                   </Link>
                 </div>
-                <div className="mt-2 flex-1 text-sm/6 text-gray-500">
+                <div className="mt-2 flex-1 text-base/7 text-gray-500">
                   {post.excerpt}
                 </div>
                 {post.author && (
@@ -66,7 +66,7 @@ async function FeaturedPosts() {
                         className="aspect-square size-6 rounded-full object-cover"
                       />
                     )}
-                    <div className="text-sm/5 text-gray-700">
+                    <div className="text-base/6 text-gray-700">
                       {post.author.name}
                     </div>
                   </div>
@@ -103,8 +103,8 @@ async function Posts({ page, category }: { page: number; category?: string }) {
           className="relative grid grid-cols-1 border-b border-b-gray-100 py-10 first:border-t first:border-t-gray-200 max-sm:gap-3 sm:grid-cols-3"
         >
           <div>
-            <div className="text-sm/5 max-sm:text-gray-700 sm:font-medium">
-              {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}
+            <div className="text-base/6 max-sm:text-gray-700 sm:font-medium">
+              {dayjs(post.publishedAt).format('D MMM YYYY')}
             </div>
             {post.author && (
               <div className="mt-2.5 flex items-center gap-3">
@@ -115,19 +115,19 @@ async function Posts({ page, category }: { page: number; category?: string }) {
                     className="aspect-square size-6 rounded-full object-cover"
                   />
                 )}
-                <div className="text-sm/5 text-gray-700">
+                <div className="text-base/6 text-gray-700">
                   {post.author.name}
                 </div>
               </div>
             )}
           </div>
           <div className="sm:col-span-2 sm:max-w-2xl">
-            <h2 className="text-sm/5 font-medium">{post.title}</h2>
-            <p className="mt-3 text-sm/6 text-gray-500">{post.excerpt}</p>
+            <h2 className="text-2xl/6 font-medium">{post.title}</h2>
+            <p className="mt-3 text-base/7 text-gray-500">{post.excerpt}</p>
             <div className="mt-4">
               <Link
                 href={`/insights/${post.slug}`}
-                className="flex items-center gap-1 text-sm/5 font-medium text-driftwood-500 hover:text-driftwood-400"
+                className="flex items-center gap-1 text-base/6 font-medium text-driftwood-500 hover:text-driftwood-400"
               >
                 <span className="absolute inset-0" />
                 Read more
@@ -236,11 +236,10 @@ export default async function Insights({
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-base/7 font-semibold text-driftwood-500">Insights</p>
             <h1 className="mt-2 text-4xl font-display font-semibold tracking-tight text-pretty text-daintree-500 sm:text-5xl">
-              Strategic insights for growth-stage teams
+              Notes from the trenches of Product Development
             </h1>
             <p className="mt-6 text-lg/8 text-gray-600">
-              Product development wisdom, strategic insights, and lessons learned 
-              from working with growth-stage SaaS teams.
+              On Product Leadership, Customer Innovation, and Strategic Technology
             </p>
           </div>
         </div>

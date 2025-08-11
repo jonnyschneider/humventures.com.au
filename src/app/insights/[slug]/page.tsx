@@ -33,8 +33,8 @@ export default async function BlogPost({
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="py-16 sm:py-24">
             <div className="text-center mb-8">
-              <p className="text-base/7 font-semibold text-driftwood-500">
-                {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}
+              <p className="text-lg/8 font-semibold text-driftwood-500">
+                {dayjs(post.publishedAt).format('D MMM YYYY')}
               </p>
               <h1 className="mt-2 text-4xl font-display font-semibold tracking-tight text-pretty text-daintree-500 sm:text-5xl">
                 {post.title}
@@ -52,7 +52,7 @@ export default async function BlogPost({
                         className="aspect-square size-6 rounded-full object-cover"
                       />
                     )}
-                    <div className="text-sm/5 text-gray-700">
+                    <div className="text-base/6 text-gray-700">
                       {post.author.name}
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export default async function BlogPost({
                       <Link
                         key={category.slug}
                         href={`/insights?category=${category.slug}`}
-                        className="rounded-full border border-dotted border-gray-300 bg-gray-50 px-2 text-sm/6 font-medium text-gray-500 hover:bg-gray-100"
+                        className="rounded-full border border-dotted border-gray-300 bg-gray-50 px-2 text-base/7 font-medium text-gray-500 hover:bg-gray-100"
                       >
                         {category.title}
                       </Link>
@@ -86,22 +86,22 @@ export default async function BlogPost({
                       components={{
                         block: {
                           normal: ({ children }) => (
-                            <p className="my-10 text-base/8 first:mt-0 last:mb-0">
+                            <p className="my-10 text-lg/9 first:mt-0 last:mb-0">
                               {children}
                             </p>
                           ),
                           h2: ({ children }) => (
-                            <h2 className="mt-12 mb-10 text-2xl/8 font-medium tracking-tight text-daintree-500 first:mt-0 last:mb-0">
+                            <h2 className="mt-12 mb-10 text-3xl/9 font-medium tracking-tight text-daintree-500 first:mt-0 last:mb-0">
                               {children}
                             </h2>
                           ),
                           h3: ({ children }) => (
-                            <h3 className="mt-12 mb-10 text-xl/8 font-medium tracking-tight text-daintree-500 first:mt-0 last:mb-0">
+                            <h3 className="mt-12 mb-10 text-2xl/9 font-medium tracking-tight text-daintree-500 first:mt-0 last:mb-0">
                               {children}
                             </h3>
                           ),
                           blockquote: ({ children }) => (
-                            <blockquote className="my-10 border-l-2 border-l-driftwood-500 pl-6 text-base/8 text-gray-700 first:mt-0 last:mb-0">
+                            <blockquote className="my-10 bg-driftwood-500 text-white p-8 rounded-lg text-xl/9 font-medium first:mt-0 last:mb-0">
                               {children}
                             </blockquote>
                           ),
@@ -129,12 +129,12 @@ export default async function BlogPost({
                         },
                         list: {
                           bullet: ({ children }) => (
-                            <ul className="list-disc pl-4 text-base/8 marker:text-gray-400 my-6">
+                            <ul className="list-disc pl-4 text-lg/9 marker:text-gray-400 my-6">
                               {children}
                             </ul>
                           ),
                           number: ({ children }) => (
-                            <ol className="list-decimal pl-4 text-base/8 marker:text-gray-400 my-6">
+                            <ol className="list-decimal pl-4 text-lg/9 marker:text-gray-400 my-6">
                               {children}
                             </ol>
                           ),
@@ -164,7 +164,7 @@ export default async function BlogPost({
                           code: ({ children }) => (
                             <>
                               <span aria-hidden>`</span>
-                              <code className="text-[15px]/8 font-semibold text-daintree-500 bg-gray-100 px-1 py-0.5 rounded">
+                              <code className="text-base/8 font-semibold text-daintree-500 bg-gray-100 px-1 py-0.5 rounded">
                                 {children}
                               </code>
                               <span aria-hidden>`</span>
@@ -187,7 +187,7 @@ export default async function BlogPost({
                   <div className="mt-10">
                     <Link
                       href="/insights"
-                      className="inline-flex items-center gap-2 rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+                      className="inline-flex items-center gap-2 rounded-md border border-gray-300 px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50"
                     >
                       <span aria-hidden="true">←</span>
                       Back to insights

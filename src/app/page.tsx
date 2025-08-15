@@ -32,7 +32,7 @@ export default function Home() {
                 We help leaders get clarity, then make it happen.         
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Link href="#services" className="text-sm/6 font-semibold text-white">
+                <Link href="#core-services" className="text-sm/6 font-semibold text-white">
                   Core Services <span aria-hidden="true">→</span>
                 </Link>
               </div>
@@ -52,7 +52,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="bg-daintree-700 py-24 sm:py-32">
+      <div id="core-services" className="bg-daintree-700 py-24 sm:py-32">
         <CoreServices />
         <StatsSection 
           title="Different"
